@@ -1,0 +1,243 @@
+@media only screen and (max-width: 600px) {
+  .modal-age-popup {
+    padding-top: 75px;
+    background-size: 196vh;
+    h1 {
+      font-size: 30px;
+    }
+
+    .logo {
+      right: 30px;
+      margin: auto;
+    }
+
+    form {
+      input {
+        width: 85px;
+      }
+    }
+  }
+  #fireflySection svg.bottom {
+    bottom: 0px;
+  }
+  #fireflySection svg.top {
+    top: 0px;
+    transform: rotate(180deg);
+  }
+  ul {
+    padding: 0 !important;
+  }
+  .index-page {
+    .mobile-height {
+      min-height: auto;
+      padding: 100px 40px;
+    }
+    .dark-circle img {
+      min-height: 150vh !important;
+    }
+    #mainSection .intro-title {
+      top: 140px;
+    }
+    #distillerySection{
+      min-height: auto;
+      #grow {
+        position: relative;
+        transform: none;
+        img {
+          scale: 1;
+        }
+      }
+    }
+  }
+  #distillerySection #grow.grow-fixed {
+    position: fixed;
+    top: 226px;
+  }
+
+  .kumaon-wrapper {
+    padding: 120px 36px 40px;
+    flex-direction: column;
+
+    div {
+      width: 100% !important ;
+    }
+    .content h2 {
+      font-weight: 400;
+      font-size: 24px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .kumaon-wrapper {
+    .col-14 {
+      display: none;
+    }
+    .col-34 .col-14 {
+      display: block !important;
+    }
+  }
+  #mainSection .intro-title,
+  .content .big-title {
+    font-size: 12vw;
+  }
+  .sneak_large {
+    display: none;
+  }
+  #waterBottle {
+    position: absolute;
+    left: 0%;
+    right: 0;
+    margin: auto;
+    bottom: unset;
+    width: 100vw;
+    margin-top: -43%;
+    z-index: 3;
+    #waterVideo {
+      clip-path: unset;
+      width: 19vw;
+      border-radius: 200px;
+      height: 100%;
+    }
+  }
+  .sneek-peek .images_section {
+    left: calc(50% - 130px);
+    position: absolute;
+    bottom: 0;
+    top: 15%;
+    right: auto;
+  }
+  .heading-style-2 {
+    font-size: 5vw;
+    line-height: 36px;
+    padding: 0 !important;
+  }
+  .hindKush .parallex-effect img {
+    position: unset;
+    width: 100vw;
+    scale: 2;
+    left: 0%;
+    padding: 80px 0 0;
+    transform: rotateY(180deg);
+  }
+  .hindKush {
+    padding: 0 40px 0 !important;
+  }
+  .distalarySection {
+    padding: 100px 0 150px ; 
+    .content {
+      gap: 15px;
+      padding: 0;
+      margin-bottom: 45px;
+      margin-top: 40px;
+      padding: 0 40px;
+    }
+  }
+  .waterSection .d-flex {
+      min-height: auto;
+  }
+  .imageAppear .interactive-img > div {
+    width: 100px;
+  }
+  #fireflySection svg {
+    height: 15%;
+  }
+  .location {
+    font-size: 26px !important;
+    padding: 24px 40px;
+  }
+  .dark-circle img {
+    min-height: 100vh;
+    border: 2px solid transparent;
+  }
+  .sneek-peek .images_section ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .circle-block {
+    width: 120px !important;
+    height: 120px !important;
+
+    &.c1 {
+      left: 5%;
+      top: 103%;
+    }
+
+    &.c2 {
+      left: 60%;
+      top: 100%;
+    }
+
+    &.c3 {
+      left: 10%;
+      top: 130%;
+    }
+
+    &.c4 {
+      left: 50%;
+      top: 130%;
+    }
+
+    &.c5 {
+      left: 73%;
+      top: 153%;
+    }
+
+    &.c6 {
+      left: 34%;
+      top: 879px;
+    }
+
+    &.c7 {
+      left: 2%;
+      top: 976px;
+    }
+
+    &.c8 {
+      left: 53%;
+      top: 1012px;
+    }
+
+    &.c9 {
+      left: 250px;
+      top: 1152px;
+    }
+
+    &.c10 {
+      left: 10%;
+      top: 1133px;
+    }
+
+    &.c11 {
+      left: 36%;
+      top: 1281px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #fireflySection svg {
+    height: 20%;
+  }
+  #mainSection .intro-title {
+    font-size: 10vw;
+  }
+}
+@media (max-width: 1024px) {
+  .imageAppear {
+    font-size: 10vw;
+  }
+  .display-md-none {
+    display: none;
+  }
+  .display-block {
+    display: block;
+  }
+}
+
+.nyuct {
+  display: block;
+  margin-top: 8px;
+}

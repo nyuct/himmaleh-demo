@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------- *
+ * Page transitions
+/* ------------------------------------------------------------- */
+
+#page-transition {
+	display: none;
+}
+body.tt-transition #page-transition {
+	position: relative;
+	display: block;
+	z-index: 99999;
+}
+
+/* Transition overlay */
+body.tt-transition .ptr-overlay {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	z-index: 1;
+}
+
+/* Transition preloader */
+body.tt-transition .ptr-preloader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	transform: translate(-50%, -50%);
+}
+
+body.tt-transition .ptr-prel-content {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	font-weight: 600;
+	color: #fff;
+}
+
+.ptr-prel-image {
+	max-height: 82px; /* You may need to change the img height to match your logo type! */
+	opacity: .5; /* You may need to change the opacity as well! */
+}

@@ -1,0 +1,72 @@
+<section
+  class="modal-age-popup active d-none"
+  id="modalAgePopup"
+>
+  <img
+    src="assets/img/logo.svg"
+    width="250px"
+    class="logo"
+  />
+  <div class="showAgeForm active">
+    <h1>
+      HELLO THERE, <br />
+      WELCOME TO THE WORLD OF HIMMALEH
+    </h1>
+
+    <h3>Please enter your date of birth:</h3>
+    <form
+      method="post"
+      id="ageForm"
+    >
+      <div>
+        <input
+          id="ageDate"
+          min="1"
+          max="31"
+          type="number"
+          oninput="nextFocus(this)"
+          placeholder="DATE"
+        />
+        <span></span>
+        <input
+          id="ageMonth"
+          min="1"
+          max="12"
+          type="number"
+          oninput="nextFocus(this)"
+          placeholder="MONTH"
+        />
+        <span></span>
+        <input
+          id="ageYear"
+          min="1900"
+          max="2030"
+          type="number"
+          oninput="nextFocus(this)"
+          placeholder="YEAR"
+        />
+      </div>
+      <button
+        id="ageButton"
+        type="submit"
+      >
+        Enter
+      </button>
+      <div id="ageError"></div>
+    </form>
+
+    <h6>BY ENTERING THIS YOU ARE AGREEING TO THE TERMS OF USE AND PRIVACY POLICY.</h6>
+  </div>
+
+  <div class="showAgeMsg">
+    <h3 class="age-heading">
+      YOU ARE APPROXIMATELY 50 MILLION YEARS<br />
+      YOUNGER TO THE PLACE WHERE WE ARE TAKING YOU
+    </h3>
+    <h4>28.9610&ordm; N, 79.5154&ordm; E</h4>
+    <img
+      src="assets/img/navigation-arrow.svg"
+      width="20px"
+    />
+  </div>
+</section>

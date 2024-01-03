@@ -1,0 +1,135 @@
+.main-footer{
+    padding: 60px;
+    overflow: hidden;
+    padding-bottom: 0;
+    background: var(--c1);
+    
+    *{
+        color: var(--c2);
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+    }
+}
+
+.footer-bottom{
+    position: relative;
+    // transform: translateY(38px);
+    overflow: hidden;
+    svg{
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        .footer-svg-path{
+            fill: red;
+            fill: var(--c2);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        .letter-2, .letter-13,  .letter-8{
+            transform:  matrix(1, 0, 0, 1, 0, 35); // translateY(35px);
+        }
+        .letter-4{
+            transform:  matrix(1, 0, 0, 1, 0, 40); // translateY(40px);
+        }
+        .letter-6, .letter-9{
+            transform:  matrix(1, 0, 0, 1, 0, -20); // translateY(-20px);
+        }
+        .letter-7{
+            transform:  matrix(1, 0, 0, 1, 0, -40); // translateY(-40px);
+        }
+        .letter-11{
+            transform:  matrix(1, 0, 0, 1, 0, 20); // translateY(20px);
+        }
+
+        /*
+        .letter-2, .letter-13,  .letter-8{
+            transform: translateY(35px);
+        }
+        .letter-4{
+            transform: translateY(40px);
+        }
+        .letter-6, .letter-9{
+            transform: translateY(-20px);
+        }
+        .letter-7{
+            transform: translateY(-40px);
+        }
+        .letter-11{
+            transform: translateY(20px);
+        }
+        */
+    }
+
+    .start{
+        position: absolute;
+        z-index: 1;
+    }
+    .svg-logo{
+        display: flex;
+        > div{
+            display: flex;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+
+.footer-right{
+    align-items: flex-start !important;
+}
+
+.footer-block{
+    min-width: 210px;
+    margin-bottom: 8px;
+    h4{
+        margin-bottom: 12px;
+    }
+    ul{
+        list-style: none;
+    }
+}
+
+
+#x{
+    position: fixed;
+    bottom:20px;
+    left: 20px;
+    padding: 12px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(60,72,88,.15) !important;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-footer{
+        padding: 40px 20px 0 20px;
+        .footer-top, .d-flex{
+            gap: 30px;
+        }
+
+        .footer-top{
+            margin-bottom: 60px;
+        }
+
+        .footer-block{
+            h4{
+                margin-bottom: 4px;
+            }
+        }
+
+    }
+}

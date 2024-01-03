@@ -1,0 +1,4977 @@
+
+  .fireflies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+  }
+  
+  .firefly {
+    position: absolute;
+    border-radius: 100%;
+    background: -webkit-radial-gradient(center, ellipse cover, #f7c138 0%, #f7c138 50%, rgba(254, 252, 234, 0) 100%);
+    background: radial-gradient(ellipse at center, #f7c138 0%, #f7c138 50%, rgba(254, 252, 234, 0) 100%);
+  }
+  
+  .highlight {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    left: -25%;
+    top: -25%;
+    border-radius: 100%;
+    background: -webkit-radial-gradient(center, ellipse cover, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  
+  @keyframes flight_1 {
+    0% {
+      left: 58.31168%;
+      bottom: 51.14286%;
+      width: 4.088px;
+      height: 4.23844px;
+    }
+    3.59621% {
+      left: 58.32372%;
+      bottom: 52.03896%;
+      width: 4.06161px;
+      height: 4.21108px;
+    }
+    6.62789% {
+      left: 58.37635%;
+      bottom: 52.81106%;
+      width: 4.05585px;
+      height: 4.20511px;
+    }
+    9.65957% {
+      left: 58.47036%;
+      bottom: 53.57173%;
+      width: 4.06715px;
+      height: 4.21682px;
+    }
+    30.99359% {
+      left: 59.38234%;
+      bottom: 58.60548%;
+      width: 4.25713px;
+      height: 4.41379px;
+    }
+    34.02527% {
+      left: 59.70484%;
+      bottom: 59.32159%;
+      width: 4.2582px;
+      height: 4.41491px;
+    }
+    37.05696% {
+      left: 60.15934%;
+      bottom: 59.72199%;
+      width: 4.22216px;
+      height: 4.37753px;
+    }
+    58.33298% {
+      left: 62.92273%;
+      bottom: 60.09444%;
+      width: 3.86969px;
+      height: 4.0121px;
+    }
+    61.36466% {
+      left: 63.34302%;
+      bottom: 59.97014%;
+      width: 3.82152px;
+      height: 3.96216px;
+    }
+    64.39634% {
+      left: 63.77191%;
+      bottom: 59.67301%;
+      width: 3.77826px;
+      height: 3.9173px;
+    }
+    85.38486% {
+      left: 66.6118%;
+      bottom: 56.62923%;
+      width: 3.52682px;
+      height: 3.65661px;
+    }
+    88.41654% {
+      left: 66.94985%;
+      bottom: 56.33217%;
+      width: 3.47961px;
+      height: 3.60766px;
+    }
+    91.44823% {
+      left: 67.19048%;
+      bottom: 56.20254%;
+      width: 3.42467px;
+      height: 3.5507px;
+    }
+    100% {
+      left: 67.5648%;
+      bottom: 56.29702%;
+      width: 3.26058px;
+      height: 3.38057px;
+    }
+  }
+  @keyframes flicker_1 {
+    0%, 17.40975%, 20.30573%, 57.43335%, 58.70631%, 59.97928%, 63.55552%, 65.99426%, 77.4667%, 79.64582%, 97.41031%, 100%, 100% {
+      opacity: 0;
+    }
+    18.13374%, 58.06983%, 59.3428%, 64.16521%, 78.01148%, 98.05773% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_1 {
+    0%, 17.98894%, 18.27854%, 57.94253%, 58.19713%, 64.04327%, 64.28714%, 77.90252%, 78.12044%, 97.92825%, 98.18722%, 100% {
+      opacity: 0;
+    }
+    18.13374%, 58.06983%, 64.16521%, 78.01148%, 98.05773% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(1) {
+    animation: flight_1 4.94775s linear 0s infinite alternate, flicker_1 23.75067s linear 0s infinite normal;
+    transform: rotate(3deg);
+  }
+  .firefly:nth-child(1) .highlight {
+    animation: flicker_highlight_1 23.75067s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_2 {
+    0% {
+      left: 55.88816%;
+      bottom: 110.25968%;
+      width: 8.84px;
+      height: 9.67273px;
+    }
+    34.79837% {
+      left: 62.02165%;
+      bottom: 103.57378%;
+      width: 7.93841px;
+      height: 8.6862px;
+    }
+    36.80312% {
+      left: 62.71006%;
+      bottom: 103.44613%;
+      width: 7.90078px;
+      height: 8.64503px;
+    }
+    38.80787% {
+      left: 63.57296%;
+      bottom: 103.7284%;
+      width: 7.90077px;
+      height: 8.64503px;
+    }
+    52.95382% {
+      left: 68.66512%;
+      bottom: 107.09426%;
+      width: 8.08126px;
+      height: 8.84251px;
+    }
+    54.95857% {
+      left: 69.49445%;
+      bottom: 107.48589%;
+      width: 8.08384px;
+      height: 8.84533px;
+    }
+    56.96332% {
+      left: 69.32589%;
+      bottom: 107.07932%;
+      width: 8.02751px;
+      height: 8.7837px;
+    }
+    78.01371% {
+      left: 64.58448%;
+      bottom: 102.09399%;
+      width: 7.53719px;
+      height: 8.24719px;
+    }
+    80.01847% {
+      left: 64.32151%;
+      bottom: 101.47262%;
+      width: 7.49169px;
+      height: 8.19741px;
+    }
+    82.02322% {
+      left: 64.26542%;
+      bottom: 100.74007%;
+      width: 7.45086px;
+      height: 8.15273px;
+    }
+    91.12772% {
+      left: 64.89415%;
+      bottom: 97.15427%;
+      width: 7.29608px;
+      height: 7.98337px;
+    }
+    93.13247% {
+      left: 64.83717%;
+      bottom: 96.59992%;
+      width: 7.24495px;
+      height: 7.92742px;
+    }
+    95.13723% {
+      left: 64.5512%;
+      bottom: 96.50414%;
+      width: 7.18747px;
+      height: 7.86453px;
+    }
+    100% {
+      left: 63.60174%;
+      bottom: 97.16909%;
+      width: 7.06919px;
+      height: 7.73511px;
+    }
+  }
+  @keyframes flicker_2 {
+    0%, 10.60956%, 12.77431%, 20.41335%, 23.11544%, 37.66963%, 40.29517%, 61.61095%, 63.79029%, 96.58047%, 100%, 100% {
+      opacity: 0;
+    }
+    11.15075%, 21.08887%, 38.32601%, 62.15579%, 97.43536% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_2 {
+    0%, 11.04251%, 11.25898%, 20.95377%, 21.22398%, 38.19473%, 38.45729%, 62.04682%, 62.26476%, 97.26438%, 97.60633%, 100% {
+      opacity: 0;
+    }
+    11.15075%, 21.08887%, 38.32601%, 62.15579%, 97.43536% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(2) {
+    animation: flight_2 7.48222s linear 0s infinite alternate, flicker_2 23.7562s linear 0s infinite normal;
+    transform: rotate(19deg);
+  }
+  .firefly:nth-child(2) .highlight {
+    animation: flicker_highlight_2 23.7562s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_3 {
+    0% {
+      left: 86.25171%;
+      bottom: 50.75524%;
+      width: 4.976px;
+      height: 5.4746px;
+    }
+    28.21569% {
+      left: 86.37338%;
+      bottom: 57.73408%;
+      width: 4.74074px;
+      height: 5.21577px;
+    }
+    31.2511% {
+      left: 86.70117%;
+      bottom: 58.29976%;
+      width: 4.70998px;
+      height: 5.18192px;
+    }
+    34.28651% {
+      left: 87.33738%;
+      bottom: 58.46553%;
+      width: 4.6814px;
+      height: 5.15048px;
+    }
+    36.78159% {
+      left: 87.9166%;
+      bottom: 58.31799%;
+      width: 4.66538px;
+      height: 5.13285px;
+    }
+    39.817% {
+      left: 88.70342%;
+      bottom: 58.15344%;
+      width: 4.67316px;
+      height: 5.14141px;
+    }
+    42.85241% {
+      left: 89.35568%;
+      bottom: 58.05775%;
+      width: 4.71311px;
+      height: 5.18537px;
+    }
+    46.40474% {
+      left: 89.82475%;
+      bottom: 58.03278%;
+      width: 4.77782px;
+      height: 5.25656px;
+    }
+    49.44015% {
+      left: 90.03163%;
+      bottom: 57.97957%;
+      width: 4.83703px;
+      height: 5.3217px;
+    }
+    52.47556% {
+      left: 90.01958%;
+      bottom: 57.89685%;
+      width: 4.89597px;
+      height: 5.38654px;
+    }
+    89.81436% {
+      left: 87.25951%;
+      bottom: 56.56887%;
+      width: 5.56905px;
+      height: 6.12706px;
+    }
+    92.84977% {
+      left: 86.76637%;
+      bottom: 56.57771%;
+      width: 5.61334px;
+      height: 6.1758px;
+    }
+    95.88518% {
+      left: 86.06067%;
+      bottom: 56.72176%;
+      width: 5.63838px;
+      height: 6.20334px;
+    }
+    100% {
+      left: 84.9944%;
+      bottom: 57.04611%;
+      width: 5.64523px;
+      height: 6.21088px;
+    }
+  }
+  @keyframes flicker_3 {
+    0%, 14.05239%, 14.60691%, 15.16142%, 76.71475%, 77.3712%, 78.02766%, 93.04631%, 94.1154%, 94.26065%, 94.79432%, 95.328%, 98.77323%, 100%, 100% {
+      opacity: 0;
+    }
+    14.32965%, 14.88416%, 77.04297%, 77.69943%, 93.31358%, 94.52749%, 95.06116%, 99.07992% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_3 {
+    0%, 14.2742%, 14.3851%, 76.97733%, 77.10862%, 93.26013%, 93.36703%, 94.47412%, 94.58085%, 99.01858%, 99.14126%, 100% {
+      opacity: 0;
+    }
+    14.32965%, 77.04297%, 93.31358%, 94.52749%, 99.07992% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(3) {
+    animation: flight_3 4.94167s linear 0s infinite alternate, flicker_3 49.86891s linear 0s infinite normal;
+    transform: rotate(-28deg);
+  }
+  .firefly:nth-child(3) .highlight {
+    animation: flicker_highlight_3 49.86891s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_4 {
+    0% {
+      left: 60.62803%;
+      bottom: 35.05762%;
+      width: 4.384px;
+      height: 5.01004px;
+    }
+    13.22711% {
+      left: 61.72657%;
+      bottom: 37.55402%;
+      width: 4.33347px;
+      height: 4.95229px;
+    }
+    17.04854% {
+      left: 62.09696%;
+      bottom: 38.21062%;
+      width: 4.35px;
+      height: 4.97118px;
+    }
+    20.86998% {
+      left: 62.33612%;
+      bottom: 38.38556%;
+      width: 4.40574px;
+      height: 5.03488px;
+    }
+    47.98207% {
+      left: 62.80067%;
+      bottom: 36.9927%;
+      width: 4.82171px;
+      height: 5.51025px;
+    }
+    51.80351% {
+      left: 62.6679%;
+      bottom: 36.78638%;
+      width: 4.879px;
+      height: 5.57572px;
+    }
+    55.62495% {
+      left: 62.33706%;
+      bottom: 36.58562%;
+      width: 4.93123px;
+      height: 5.63541px;
+    }
+    81.72365% {
+      left: 58.89679%;
+      bottom: 35.32089%;
+      width: 5.2343px;
+      height: 5.98176px;
+    }
+    85.54508% {
+      left: 58.20809%;
+      bottom: 35.17904%;
+      width: 5.26414px;
+      height: 6.01586px;
+    }
+    89.36652% {
+      left: 57.40791%;
+      bottom: 35.10351%;
+      width: 5.27461px;
+      height: 6.02782px;
+    }
+    90.78077% {
+      left: 57.10653%;
+      bottom: 35.10045%;
+      width: 5.27169px;
+      height: 6.02448px;
+    }
+    94.60221% {
+      left: 56.43007%;
+      bottom: 35.44564%;
+      width: 5.24706px;
+      height: 5.99634px;
+    }
+    98.42365% {
+      left: 56.57914%;
+      bottom: 36.12555%;
+      width: 5.21361px;
+      height: 5.95812px;
+    }
+    100% {
+      left: 56.7938%;
+      bottom: 36.3541%;
+      width: 5.20404px;
+      height: 5.94717px;
+    }
+  }
+  @keyframes flicker_4 {
+    0%, 15.33318%, 19.04859%, 61.31168%, 64.72521%, 75.93663%, 78.58232%, 87.44786%, 90.85483%, 97.98844%, 100%, 100% {
+      opacity: 0;
+    }
+    16.26203%, 62.16506%, 76.59805%, 88.2996%, 98.49133% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_4 {
+    0%, 16.07626%, 16.4478%, 61.99438%, 62.33574%, 76.46577%, 76.73033%, 88.12925%, 88.46995%, 98.39075%, 98.59191%, 100% {
+      opacity: 0;
+    }
+    16.26203%, 62.16506%, 76.59805%, 88.2996%, 98.49133% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(4) {
+    animation: flight_4 3.92523s linear 0s infinite alternate, flicker_4 21.11375s linear 0s infinite normal;
+    transform: rotate(-27deg);
+  }
+  .firefly:nth-child(4) .highlight {
+    animation: flicker_highlight_4 21.11375s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_5 {
+    0% {
+      left: 105.31803%;
+      bottom: 30.00409%;
+      width: 7.608px;
+      height: 8.59552px;
+    }
+    5.63389% {
+      left: 102.50676%;
+      bottom: 32.98614%;
+      width: 7.50084px;
+      height: 8.47445px;
+    }
+    6.83567% {
+      left: 101.94348%;
+      bottom: 33.47465%;
+      width: 7.4612px;
+      height: 8.42966px;
+    }
+    8.03744% {
+      left: 101.49106%;
+      bottom: 33.74057%;
+      width: 7.40824px;
+      height: 8.36983px;
+    }
+    38.61628% {
+      left: 94.0457%;
+      bottom: 34.74475%;
+      width: 5.91627px;
+      height: 6.68421px;
+    }
+    39.81805% {
+      left: 93.69473%;
+      bottom: 34.35432%;
+      width: 5.86792px;
+      height: 6.62958px;
+    }
+    41.01982% {
+      left: 93.4682%;
+      bottom: 33.54615%;
+      width: 5.86802px;
+      height: 6.62969px;
+    }
+    64.4045% {
+      left: 92.0556%;
+      bottom: 18.37552%;
+      width: 6.43175px;
+      height: 7.2666px;
+    }
+    65.60628% {
+      left: 91.88841%;
+      bottom: 17.73488%;
+      width: 6.4722px;
+      height: 7.31229px;
+    }
+    66.80805% {
+      left: 91.63627%;
+      bottom: 17.31249%;
+      width: 6.52152px;
+      height: 7.36801px;
+    }
+    96.68976% {
+      left: 83.52007%;
+      bottom: 12.65775%;
+      width: 7.83492px;
+      height: 8.85189px;
+    }
+    97.89154% {
+      left: 82.95741%;
+      bottom: 12.17531%;
+      width: 7.86909px;
+      height: 8.8905px;
+    }
+    99.09331% {
+      left: 82.56244%;
+      bottom: 11.63058%;
+      width: 7.83044px;
+      height: 8.84683px;
+    }
+    100% {
+      left: 82.4738%;
+      bottom: 11.40272%;
+      width: 7.78944px;
+      height: 8.80051px;
+    }
+  }
+  @keyframes flicker_5 {
+    0%, 26.60513%, 27.56956%, 50.71727%, 52.27977%, 66.43414%, 68.03718%, 79.70006%, 81.02688%, 98.77273%, 100%, 100% {
+      opacity: 0;
+    }
+    26.84623%, 51.10789%, 66.8349%, 80.03176%, 99.07955% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_5 {
+    0%, 26.79801%, 26.89446%, 51.02977%, 51.18602%, 66.75475%, 66.91505%, 79.96542%, 80.0981%, 99.01818%, 99.14091%, 100% {
+      opacity: 0;
+    }
+    26.84623%, 51.10789%, 66.8349%, 80.03176%, 99.07955% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(5) {
+    animation: flight_5 12.48155s linear 0s infinite alternate, flicker_5 44.01997s linear 0s infinite normal;
+    transform: rotate(28deg);
+  }
+  .firefly:nth-child(5) .highlight {
+    animation: flicker_highlight_5 44.01997s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_6 {
+    0% {
+      left: 51.97381%;
+      bottom: 64.25528%;
+      width: 5.368px;
+      height: 6.34712px;
+    }
+    3.98985% {
+      left: 52.86165%;
+      bottom: 64.22691%;
+      width: 5.37783px;
+      height: 6.35875px;
+    }
+    7.64587% {
+      left: 53.62275%;
+      bottom: 64.06776%;
+      width: 5.35835px;
+      height: 6.33571px;
+    }
+    11.30189% {
+      left: 53.98263%;
+      bottom: 63.79337%;
+      width: 5.30779px;
+      height: 6.27593px;
+    }
+    30.49499% {
+      left: 53.85669%;
+      bottom: 62.37204%;
+      width: 5.00678px;
+      height: 5.92001px;
+    }
+    34.15101% {
+      left: 54.2449%;
+      bottom: 62.11537%;
+      width: 4.95737px;
+      height: 5.86159px;
+    }
+    37.80704% {
+      left: 55.03728%;
+      bottom: 62.02182%;
+      width: 4.94829px;
+      height: 5.85086px;
+    }
+    61.2625% {
+      left: 59.98605%;
+      bottom: 62.29344%;
+      width: 5.07402px;
+      height: 5.99952px;
+    }
+    64.91852% {
+      left: 60.75892%;
+      bottom: 62.15535%;
+      width: 5.09102px;
+      height: 6.01962px;
+    }
+    68.57454% {
+      left: 61.48925%;
+      bottom: 61.83984%;
+      width: 5.10448px;
+      height: 6.03554px;
+    }
+    73.44123% {
+      left: 62.36048%;
+      bottom: 61.21544%;
+      width: 5.11706px;
+      height: 6.05041px;
+    }
+    77.09725% {
+      left: 63.03109%;
+      bottom: 60.85978%;
+      width: 5.0965px;
+      height: 6.02611px;
+    }
+    80.75327% {
+      left: 63.10293%;
+      bottom: 61.04866%;
+      width: 5.03915px;
+      height: 5.95829px;
+    }
+    100% {
+      left: 61.7156%;
+      bottom: 63.00848%;
+      width: 4.78036px;
+      height: 5.6523px;
+    }
+  }
+  @keyframes flicker_6 {
+    0%, 79.91293%, 81.35968%, 86.39813%, 88.2857%, 90.40566%, 92.56374%, 94.94049%, 96.33013%, 98.33284%, 100%, 100% {
+      opacity: 0;
+    }
+    80.27462%, 86.87002%, 90.94518%, 95.2879%, 98.74963% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_6 {
+    0%, 80.20228%, 80.34696%, 86.77564%, 86.9644%, 90.83728%, 91.05308%, 95.21842%, 95.35738%, 98.66627%, 98.83299%, 100% {
+      opacity: 0;
+    }
+    80.27462%, 86.87002%, 90.94518%, 95.2879%, 98.74963% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(6) {
+    animation: flight_6 4.10282s linear 0s infinite alternate, flicker_6 34.57641s linear 0s infinite normal;
+    transform: rotate(22deg);
+  }
+  .firefly:nth-child(6) .highlight {
+    animation: flicker_highlight_6 34.57641s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_7 {
+    0% {
+      left: -4.67694%;
+      bottom: 0.77835%;
+      width: 8.552px;
+      height: 9.99216px;
+    }
+    17.73413% {
+      left: -2.19453%;
+      bottom: 0.1508%;
+      width: 8.85851px;
+      height: 10.35029px;
+    }
+    20.65316% {
+      left: -1.99297%;
+      bottom: 0.0435%;
+      width: 8.91522px;
+      height: 10.41654px;
+    }
+    23.57219% {
+      left: -2.02222%;
+      bottom: -0.06139%;
+      width: 8.97499px;
+      height: 10.48638px;
+    }
+    43.23868% {
+      left: -2.18129%;
+      bottom: 0.71712%;
+      width: 8.57498px;
+      height: 10.01901px;
+    }
+    46.15771% {
+      left: -2.43973%;
+      bottom: 1.12298%;
+      width: 8.62473px;
+      height: 10.07713px;
+    }
+    49.07674% {
+      left: -2.54897%;
+      bottom: 2.04409%;
+      width: 8.62732px;
+      height: 10.08016px;
+    }
+    67.20205% {
+      left: -2.42655%;
+      bottom: 7.65062%;
+      width: 8.46079px;
+      height: 9.88559px;
+    }
+    70.12108% {
+      left: -2.16009%;
+      bottom: 8.54469%;
+      width: 8.45652px;
+      height: 9.8806px;
+    }
+    73.0401% {
+      left: -1.65592%;
+      bottom: 9.10463%;
+      width: 8.48451px;
+      height: 9.9133px;
+    }
+    86.1054% {
+      left: 0.72611%;
+      bottom: 9.80495%;
+      width: 8.67697px;
+      height: 10.13818px;
+    }
+    89.02443% {
+      left: 1.20372%;
+      bottom: 10.10597%;
+      width: 8.71941px;
+      height: 10.18775px;
+    }
+    91.94345% {
+      left: 1.61035%;
+      bottom: 10.54216%;
+      width: 8.76012px;
+      height: 10.23533px;
+    }
+    100% {
+      left: 2.51594%;
+      bottom: 12.08525%;
+      width: 8.86514px;
+      height: 10.35802px;
+    }
+  }
+  @keyframes flicker_7 {
+    0%, 20.94883%, 23.35227%, 29.2478%, 31.59279%, 59.75109%, 61.4401%, 66.75652%, 68.98636%, 98.15401%, 100%, 100% {
+      opacity: 0;
+    }
+    21.54969%, 29.83405%, 60.17335%, 67.31398%, 98.61551% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_7 {
+    0%, 21.42952%, 21.66986%, 29.7168%, 29.9513%, 60.08889%, 60.2578%, 67.20249%, 67.42547%, 98.52321%, 98.70781%, 100% {
+      opacity: 0;
+    }
+    21.54969%, 29.83405%, 60.17335%, 67.31398%, 98.61551% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(7) {
+    animation: flight_7 5.1387s linear 0s infinite alternate, flicker_7 30.23231s linear 0s infinite normal;
+    transform: rotate(-28deg);
+  }
+  .firefly:nth-child(7) .highlight {
+    animation: flicker_highlight_7 30.23231s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_8 {
+    0% {
+      left: 39.20346%;
+      bottom: 35.71707%;
+      width: 5.992px;
+      height: 6.46776px;
+    }
+    1.09971% {
+      left: 39.54837%;
+      bottom: 35.95185%;
+      width: 5.96875px;
+      height: 6.44267px;
+    }
+    2.89047% {
+      left: 40.12883%;
+      bottom: 36.54448%;
+      width: 5.95507px;
+      height: 6.4279px;
+    }
+    4.68123% {
+      left: 40.51775%;
+      bottom: 37.19604%;
+      width: 5.97875px;
+      height: 6.45346px;
+    }
+    60.91739% {
+      left: 45.43805%;
+      bottom: 54.53832%;
+      width: 7.37306px;
+      height: 7.95848px;
+    }
+    62.70815% {
+      left: 45.34764%;
+      bottom: 54.91839%;
+      width: 7.42736px;
+      height: 8.01709px;
+    }
+    64.4989% {
+      left: 44.9743%;
+      bottom: 54.98219%;
+      width: 7.48205px;
+      height: 8.07612px;
+    }
+    73.01515% {
+      left: 42.36527%;
+      bottom: 53.97749%;
+      width: 7.69963px;
+      height: 8.31098px;
+    }
+    74.80591% {
+      left: 42.22476%;
+      bottom: 53.57785%;
+      width: 7.75252px;
+      height: 8.36807px;
+    }
+    76.59667% {
+      left: 42.76961%;
+      bottom: 53.1123%;
+      width: 7.78813px;
+      height: 8.4065px;
+    }
+    93.78432% {
+      left: 50.55915%;
+      bottom: 49.72686%;
+      width: 7.90706px;
+      height: 8.53488px;
+    }
+    95.57507% {
+      left: 51.31405%;
+      bottom: 49.22356%;
+      width: 7.90984px;
+      height: 8.53788px;
+    }
+    97.36583% {
+      left: 50.51378%;
+      bottom: 49.24461%;
+      width: 7.88143px;
+      height: 8.50722px;
+    }
+    100% {
+      left: 49.29687%;
+      bottom: 49.51741%;
+      width: 7.85013px;
+      height: 8.47343px;
+    }
+  }
+  @keyframes flicker_8 {
+    0%, 19.85403%, 21.71534%, 38.64516%, 39.86197%, 76.7927%, 78.10628%, 94.85279%, 96.43121%, 98.15675%, 100%, 100% {
+      opacity: 0;
+    }
+    20.31936%, 38.94936%, 77.1211%, 95.2474%, 98.61756% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_8 {
+    0%, 20.2263%, 20.41243%, 38.88852%, 39.0102%, 77.05542%, 77.18678%, 95.16848%, 95.32632%, 98.5254%, 98.70972%, 100% {
+      opacity: 0;
+    }
+    20.31936%, 38.94936%, 77.1211%, 95.2474%, 98.61756% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(8) {
+    animation: flight_8 8.37634s linear 0s infinite alternate, flicker_8 37.40925s linear 0s infinite normal;
+    transform: rotate(-19deg);
+  }
+  .firefly:nth-child(8) .highlight {
+    animation: flicker_highlight_8 37.40925s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_9 {
+    0% {
+      left: -0.24146%;
+      bottom: 75.12073%;
+      width: 5.592px;
+      height: 5.65351px;
+    }
+    15.33609% {
+      left: -1.4977%;
+      bottom: 72.483%;
+      width: 5.39279px;
+      height: 5.45211px;
+    }
+    18.47921% {
+      left: -1.42646%;
+      bottom: 71.74318%;
+      width: 5.3628px;
+      height: 5.4218px;
+    }
+    21.62233% {
+      left: -0.89015%;
+      bottom: 71.13892%;
+      width: 5.36819px;
+      height: 5.42725px;
+    }
+    31.60539% {
+      left: 1.09551%;
+      bottom: 70.19126%;
+      width: 5.44794px;
+      height: 5.50786px;
+    }
+    34.74851% {
+      left: 1.74775%;
+      bottom: 70.0966%;
+      width: 5.47726px;
+      height: 5.53751px;
+    }
+    37.89163% {
+      left: 2.38114%;
+      bottom: 70.22153%;
+      width: 5.5089px;
+      height: 5.5695px;
+    }
+    60.25209% {
+      left: 6.50863%;
+      bottom: 72.5342%;
+      width: 5.73499px;
+      height: 5.79808px;
+    }
+    63.39521% {
+      left: 7.18603%;
+      bottom: 72.86112%;
+      width: 5.75673px;
+      height: 5.82006px;
+    }
+    66.53833% {
+      left: 7.93096%;
+      bottom: 73.17539%;
+      width: 5.7676px;
+      height: 5.83104px;
+    }
+    92.98892% {
+      left: 14.52582%;
+      bottom: 75.62339%;
+      width: 5.7676px;
+      height: 5.83104px;
+    }
+    96.13204% {
+      left: 15.27964%;
+      bottom: 75.66707%;
+      width: 5.78852px;
+      height: 5.8522px;
+    }
+    99.27517% {
+      left: 15.01596%;
+      bottom: 75.11783%;
+      width: 5.82841px;
+      height: 5.89252px;
+    }
+    100% {
+      left: 14.88604%;
+      bottom: 74.99995%;
+      width: 5.83455px;
+      height: 5.89873px;
+    }
+  }
+  @keyframes flicker_9 {
+    0%, 9.17088%, 9.6183%, 10.06573%, 13.85995%, 14.36701%, 14.87408%, 60.01318%, 61.26204%, 82.65453%, 83.56408%, 98.70252%, 99.35126%, 100%, 100% {
+      opacity: 0;
+    }
+    9.39459%, 9.84202%, 14.11348%, 14.62054%, 60.32539%, 82.88192%, 99.02689%, 99.67563% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_9 {
+    0%, 9.34985%, 9.43934%, 14.06277%, 14.16418%, 60.26295%, 60.38784%, 82.83644%, 82.9274%, 98.96202%, 99.09177%, 100% {
+      opacity: 0;
+    }
+    9.39459%, 14.11348%, 60.32539%, 82.88192%, 99.02689% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(9) {
+    animation: flight_9 4.77233s linear 0s infinite alternate, flicker_9 54.15981s linear 0s infinite normal;
+    transform: rotate(9deg);
+  }
+  .firefly:nth-child(9) .highlight {
+    animation: flicker_highlight_9 54.15981s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_10 {
+    0% {
+      left: 58.71949%;
+      bottom: 10.39899%;
+      width: 7.912px;
+      height: 9.44218px;
+    }
+    20.74145% {
+      left: 56.79774%;
+      bottom: 15.13479%;
+      width: 7.8071px;
+      height: 9.31699px;
+    }
+    24.42785% {
+      left: 56.1985%;
+      bottom: 15.8024%;
+      width: 7.81165px;
+      height: 9.32243px;
+    }
+    28.11426% {
+      left: 55.49942%;
+      bottom: 15.9167%;
+      width: 7.84762px;
+      height: 9.36535px;
+    }
+    30.8955% {
+      left: 55.09548%;
+      bottom: 15.69128%;
+      width: 7.88176px;
+      height: 9.40609px;
+    }
+    34.58191% {
+      left: 54.45877%;
+      bottom: 15.69324%;
+      width: 7.92388px;
+      height: 9.45636px;
+    }
+    38.26831% {
+      left: 53.8008%;
+      bottom: 16.0291%;
+      width: 7.95654px;
+      height: 9.49533px;
+    }
+    45.76812% {
+      left: 52.58583%;
+      bottom: 17.22611%;
+      width: 7.99813px;
+      height: 9.54497px;
+    }
+    49.45453% {
+      left: 51.94265%;
+      bottom: 17.42822%;
+      width: 8.03714px;
+      height: 9.59152px;
+    }
+    53.14094% {
+      left: 51.53032%;
+      bottom: 16.99107%;
+      width: 8.08439px;
+      height: 9.64791px;
+    }
+    87.11246% {
+      left: 50.32477%;
+      bottom: 10.07211%;
+      width: 8.43964px;
+      height: 10.07186px;
+    }
+    90.79887% {
+      left: 50.30641%;
+      bottom: 9.14489%;
+      width: 8.45016px;
+      height: 10.08442px;
+    }
+    94.48527% {
+      left: 50.49694%;
+      bottom: 8.63807%;
+      width: 8.40479px;
+      height: 10.03028px;
+    }
+    100% {
+      left: 50.83441%;
+      bottom: 8.55811%;
+      width: 8.31886px;
+      height: 9.92773px;
+    }
+  }
+  @keyframes flicker_10 {
+    0%, 26.43049%, 27.84881%, 33.07491%, 34.39957%, 34.42619%, 35.92665%, 59.88446%, 61.08438%, 98.05697%, 100%, 100% {
+      opacity: 0;
+    }
+    26.78507%, 33.40608%, 34.80131%, 60.18444%, 98.54273% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_10 {
+    0%, 26.71416%, 26.85599%, 33.33984%, 33.47231%, 34.72629%, 34.87633%, 60.12445%, 60.24444%, 98.44558%, 98.63988%, 100% {
+      opacity: 0;
+    }
+    26.78507%, 33.40608%, 34.80131%, 60.18444%, 98.54273% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(10) {
+    animation: flight_10 4.069s linear 0s infinite alternate, flicker_10 45.12457s linear 0s infinite normal;
+    transform: rotate(10deg);
+  }
+  .firefly:nth-child(10) .highlight {
+    animation: flicker_highlight_10 45.12457s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_11 {
+    0% {
+      left: -4.67284%;
+      bottom: 82.09825%;
+      width: 7.128px;
+      height: 8.41389px;
+    }
+    16.74384% {
+      left: -8.05458%;
+      bottom: 86.23339%;
+      width: 7.38774px;
+      height: 8.72049px;
+    }
+    19.18222% {
+      left: -8.72342%;
+      bottom: 86.6543%;
+      width: 7.42558px;
+      height: 8.76515px;
+    }
+    21.62059% {
+      left: -9.51692%;
+      bottom: 86.84111%;
+      width: 7.46014px;
+      height: 8.80594px;
+    }
+    30.95918% {
+      left: -6.76856%;
+      bottom: 86.67173%;
+      width: 7.57035px;
+      height: 8.93604px;
+    }
+    33.39756% {
+      left: -7.39344%;
+      bottom: 86.54366%;
+      width: 7.61732px;
+      height: 8.99149px;
+    }
+    35.83594% {
+      left: -7.58585%;
+      bottom: 86.34617%;
+      width: 7.67425px;
+      height: 9.05869px;
+    }
+    39.36204% {
+      left: -7.3104%;
+      bottom: 86.0384%;
+      width: 7.75117px;
+      height: 9.14948px;
+    }
+    41.80042% {
+      left: -7.31947%;
+      bottom: 86.06654%;
+      width: 7.81055px;
+      height: 9.21958px;
+    }
+    44.2388% {
+      left: -7.54994%;
+      bottom: 86.35952%;
+      width: 7.86841px;
+      height: 9.28787px;
+    }
+    68.63206% {
+      left: -5.64859%;
+      bottom: 91.33473%;
+      width: 8.36348px;
+      height: 9.87225px;
+    }
+    71.07043% {
+      left: -5.71078%;
+      bottom: 91.88518%;
+      width: 8.41499px;
+      height: 9.93305px;
+    }
+    73.50881% {
+      left: -5.38248%;
+      bottom: 92.39573%;
+      width: 8.46019px;
+      height: 9.98641px;
+    }
+    100% {
+      left: 1.41311%;
+      bottom: 96.83381%;
+      width: 8.82374px;
+      height: 10.41554px;
+    }
+  }
+  @keyframes flicker_11 {
+    0%, 4.40016%, 8.65512%, 12.1919%, 14.07963%, 15.96736%, 42.8007%, 46.29695%, 49.52498%, 51.72838%, 96.84163%, 100%, 100% {
+      opacity: 0;
+    }
+    5.4639%, 13.13577%, 15.02349%, 43.67476%, 50.07583%, 97.63123% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_11 {
+    0%, 5.25115%, 5.67665%, 12.94699%, 13.32454%, 43.49995%, 43.84957%, 49.96566%, 50.186%, 97.47331%, 97.78914%, 100% {
+      opacity: 0;
+    }
+    5.4639%, 13.13577%, 43.67476%, 50.07583%, 97.63123% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(11) {
+    animation: flight_11 6.15163s linear 0s infinite alternate, flicker_11 17.12163s linear 0s infinite normal;
+    transform: rotate(-2deg);
+  }
+  .firefly:nth-child(11) .highlight {
+    animation: flicker_highlight_11 17.12163s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_12 {
+    0% {
+      left: 47.72797%;
+      bottom: 92.18077%;
+      width: 2.952px;
+      height: 3.05119px;
+    }
+    14.88898% {
+      left: 50.4256%;
+      bottom: 93.59599%;
+      width: 3.22242px;
+      height: 3.3307px;
+    }
+    17.40761% {
+      left: 51.00393%;
+      bottom: 94.03224%;
+      width: 3.2443px;
+      height: 3.35331px;
+    }
+    19.92624% {
+      left: 51.34384%;
+      bottom: 94.46967%;
+      width: 3.20951px;
+      height: 3.31735px;
+    }
+    36.57526% {
+      left: 51.75242%;
+      bottom: 96.11767%;
+      width: 2.86326px;
+      height: 2.95947px;
+    }
+    39.09389% {
+      left: 51.95766%;
+      bottom: 96.2086%;
+      width: 2.80828px;
+      height: 2.90264px;
+    }
+    41.61251% {
+      left: 52.29628%;
+      bottom: 96.13083%;
+      width: 2.75532px;
+      height: 2.8479px;
+    }
+    70.59305% {
+      left: 57.17328%;
+      bottom: 93.56873%;
+      width: 2.21533px;
+      height: 2.28976px;
+    }
+    73.11167% {
+      left: 57.56792%;
+      bottom: 93.45359%;
+      width: 2.16628px;
+      height: 2.23907px;
+    }
+    75.6303% {
+      left: 57.93375%;
+      bottom: 93.44464%;
+      width: 2.11634px;
+      height: 2.18744px;
+    }
+    87.57382% {
+      left: 59.4804%;
+      bottom: 93.88271%;
+      width: 1.88095px;
+      height: 1.94415px;
+    }
+    90.09245% {
+      left: 59.78654%;
+      bottom: 94.01946%;
+      width: 1.83199px;
+      height: 1.89355px;
+    }
+    92.61108% {
+      left: 60.07486%;
+      bottom: 94.20022%;
+      width: 1.78393px;
+      height: 1.84387px;
+    }
+    100% {
+      left: 60.86157%;
+      bottom: 94.8517%;
+      width: 1.64618px;
+      height: 1.70149px;
+    }
+  }
+  @keyframes flicker_12 {
+    0%, 31.34405%, 33.51753%, 48.63616%, 50.33831%, 78.64429%, 80.80382%, 90.78108%, 93.03099%, 97.87808%, 100%, 100% {
+      opacity: 0;
+    }
+    31.88742%, 49.0617%, 79.18417%, 91.34356%, 98.40856% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_12 {
+    0%, 31.77875%, 31.9961%, 48.97659%, 49.1468%, 79.0762%, 79.29215%, 91.23106%, 91.45605%, 98.30247%, 98.51466%, 100% {
+      opacity: 0;
+    }
+    31.88742%, 49.0617%, 79.18417%, 91.34356%, 98.40856% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(12) {
+    animation: flight_12 5.95562s linear 0s infinite alternate, flicker_12 28.55383s linear 0s infinite normal;
+    transform: rotate(6deg);
+  }
+  .firefly:nth-child(12) .highlight {
+    animation: flicker_highlight_12 28.55383s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_13 {
+    0% {
+      left: 52.70994%;
+      bottom: 68.36734%;
+      width: 3.304px;
+      height: 3.95555px;
+    }
+    7.56705% {
+      left: 51.63775%;
+      bottom: 67.07084%;
+      width: 3.43991px;
+      height: 4.11826px;
+    }
+    9.88637% {
+      left: 51.60625%;
+      bottom: 66.47671%;
+      width: 3.47433px;
+      height: 4.15947px;
+    }
+    12.2057% {
+      left: 52.25241%;
+      bottom: 66.1954%;
+      width: 3.4513px;
+      height: 4.1319px;
+    }
+    49.26696% {
+      left: 61.5966%;
+      bottom: 66.29787%;
+      width: 2.8738px;
+      height: 3.44051px;
+    }
+    51.58629% {
+      left: 61.98744%;
+      bottom: 66.51614%;
+      width: 2.82866px;
+      height: 3.38647px;
+    }
+    53.90562% {
+      left: 62.08581%;
+      bottom: 66.93588%;
+      width: 2.7826px;
+      height: 3.33132px;
+    }
+    66.04749% {
+      left: 61.26765%;
+      bottom: 69.60567%;
+      width: 2.57799px;
+      height: 3.08636px;
+    }
+    68.36682% {
+      left: 60.85643%;
+      bottom: 69.94521%;
+      width: 2.53799px;
+      height: 3.03849px;
+    }
+    70.68615% {
+      left: 60.45184%;
+      bottom: 69.39853%;
+      width: 2.55495px;
+      height: 3.05879px;
+    }
+    78.40529% {
+      left: 59.86619%;
+      bottom: 67.43477%;
+      width: 2.65396px;
+      height: 3.17732px;
+    }
+    80.72461% {
+      left: 59.69945%;
+      bottom: 67.09902%;
+      width: 2.7031px;
+      height: 3.23615px;
+    }
+    83.04394% {
+      left: 59.59642%;
+      bottom: 67.19627%;
+      width: 2.76201px;
+      height: 3.30668px;
+    }
+    100% {
+      left: 59.37642%;
+      bottom: 70.19559%;
+      width: 3.14221px;
+      height: 3.76185px;
+    }
+  }
+  @keyframes flicker_13 {
+    0%, 4.02898%, 6.81447%, 37.29914%, 40.3254%, 43.06764%, 45.93459%, 54.10316%, 56.5001%, 98.23525%, 100%, 100% {
+      opacity: 0;
+    }
+    4.72535%, 38.0557%, 43.78437%, 54.70239%, 98.67644% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_13 {
+    0%, 4.58607%, 4.86462%, 37.90439%, 38.20701%, 43.64103%, 43.92772%, 54.58255%, 54.82224%, 98.5882%, 98.76468%, 100% {
+      opacity: 0;
+    }
+    4.72535%, 38.0557%, 43.78437%, 54.70239%, 98.67644% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(13) {
+    animation: flight_13 6.46739s linear 0s infinite alternate, flicker_13 24.02742s linear 0s infinite normal;
+    transform: rotate(-20deg);
+  }
+  .firefly:nth-child(13) .highlight {
+    animation: flicker_highlight_13 24.02742s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_14 {
+    0% {
+      left: 103.03678%;
+      bottom: 70.31455%;
+      width: 8.032px;
+      height: 9.25608px;
+    }
+    28.93532% {
+      left: 108.24665%;
+      bottom: 81.56232%;
+      width: 8.70997px;
+      height: 10.03737px;
+    }
+    30.67918% {
+      left: 108.31109%;
+      bottom: 82.4437%;
+      width: 8.73462px;
+      height: 10.06578px;
+    }
+    32.42303% {
+      left: 108.05898%;
+      bottom: 83.34507%;
+      width: 8.7345px;
+      height: 10.06564px;
+    }
+    74.41403% {
+      left: 97.00579%;
+      bottom: 101.35784%;
+      width: 8.24628px;
+      height: 9.50301px;
+    }
+    76.15789% {
+      left: 96.46906%;
+      bottom: 102.10445%;
+      width: 8.2462px;
+      height: 9.50292px;
+    }
+    77.90174% {
+      left: 95.91294%;
+      bottom: 102.75907%;
+      width: 8.26874px;
+      height: 9.5289px;
+    }
+    78.18416% {
+      left: 95.83227%;
+      bottom: 102.83783%;
+      width: 8.27508px;
+      height: 9.5362px;
+    }
+    79.92801% {
+      left: 95.62948%;
+      bottom: 103.52847%;
+      width: 8.3164px;
+      height: 9.58382px;
+    }
+    81.67186% {
+      left: 95.802%;
+      bottom: 104.32686%;
+      width: 8.35262px;
+      height: 9.62555px;
+    }
+    95.90373% {
+      left: 99.62734%;
+      bottom: 110.68237%;
+      width: 8.57024px;
+      height: 9.87635px;
+    }
+    97.64758% {
+      left: 99.95446%;
+      bottom: 111.25875%;
+      width: 8.61986px;
+      height: 9.93352px;
+    }
+    99.39144% {
+      left: 99.65189%;
+      bottom: 110.81898%;
+      width: 8.66257px;
+      height: 9.98274px;
+    }
+    100% {
+      left: 99.49254%;
+      bottom: 110.57039%;
+      width: 8.66896px;
+      height: 9.99012px;
+    }
+  }
+  @keyframes flicker_14 {
+    0%, 13.00041%, 15.13548%, 29.34435%, 30.65759%, 53.07955%, 54.94732%, 60.61882%, 61.66473%, 62.71064%, 98.54776%, 100%, 100% {
+      opacity: 0;
+    }
+    13.53418%, 29.67266%, 53.5465%, 61.14178%, 62.18769%, 98.91082% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_14 {
+    0%, 13.42742%, 13.64093%, 29.607%, 29.73833%, 53.45311%, 53.63988%, 61.03719%, 61.24637%, 98.83821%, 98.98343%, 100% {
+      opacity: 0;
+    }
+    13.53418%, 29.67266%, 53.5465%, 61.14178%, 98.91082% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(14) {
+    animation: flight_14 8.60165s linear 0s infinite alternate, flicker_14 35.63844s linear 0s infinite normal;
+    transform: rotate(-14deg);
+  }
+  .firefly:nth-child(14) .highlight {
+    animation: flicker_highlight_14 35.63844s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_15 {
+    0% {
+      left: 89.90413%;
+      bottom: 105.0949%;
+      width: 6.192px;
+      height: 6.50036px;
+    }
+    10.82377% {
+      left: 89.74007%;
+      bottom: 104.19153%;
+      width: 5.95788px;
+      height: 6.25458px;
+    }
+    13.57282% {
+      left: 89.9884%;
+      bottom: 104.23641%;
+      width: 5.90404px;
+      height: 6.19807px;
+    }
+    16.32188% {
+      left: 90.52777%;
+      bottom: 104.61679%;
+      width: 5.87504px;
+      height: 6.16761px;
+    }
+    26.75291% {
+      left: 92.91508%;
+      bottom: 102.50598%;
+      width: 5.86203px;
+      height: 6.15396px;
+    }
+    29.50196% {
+      left: 93.72006%;
+      bottom: 102.65246%;
+      width: 5.85495px;
+      height: 6.14652px;
+    }
+    32.25101% {
+      left: 94.40077%;
+      bottom: 102.18333%;
+      width: 5.84604px;
+      height: 6.13717px;
+    }
+    45.97172% {
+      left: 96.39456%;
+      bottom: 98.41789%;
+      width: 5.80811px;
+      height: 6.09735px;
+    }
+    48.72078% {
+      left: 97.08444%;
+      bottom: 97.97947%;
+      width: 5.79743px;
+      height: 6.08614px;
+    }
+    51.46983% {
+      left: 97.83712%;
+      bottom: 98.2585%;
+      width: 5.78795px;
+      height: 6.07619px;
+    }
+    85.1705% {
+      left: 104.22783%;
+      bottom: 90.21447%;
+      width: 5.72276px;
+      height: 6.00775px;
+    }
+    87.91955% {
+      left: 104.60833%;
+      bottom: 90.8647%;
+      width: 5.70526px;
+      height: 5.98938px;
+    }
+    90.66861% {
+      left: 104.82361%;
+      bottom: 91.4901%;
+      width: 5.67625px;
+      height: 5.95893px;
+    }
+    100% {
+      left: 104.98374%;
+      bottom: 93.40854%;
+      width: 5.54618px;
+      height: 5.82238px;
+    }
+  }
+  @keyframes flicker_15 {
+    0%, 21.85567%, 23.23712%, 45.7219%, 47.42336%, 52.69119%, 54.12468%, 76.53809%, 78.52578%, 98.53388%, 100%, 100% {
+      opacity: 0;
+    }
+    22.20103%, 46.14726%, 53.04956%, 77.03501%, 98.90041% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_15 {
+    0%, 22.13196%, 22.27011%, 46.06219%, 46.23234%, 52.97789%, 53.12124%, 76.93563%, 77.13439%, 98.82711%, 98.97372%, 100% {
+      opacity: 0;
+    }
+    22.20103%, 46.14726%, 53.04956%, 77.03501%, 98.90041% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(15) {
+    animation: flight_15 5.45642s linear 0s infinite alternate, flicker_15 44.59854s linear 0s infinite normal;
+    transform: rotate(7deg);
+  }
+  .firefly:nth-child(15) .highlight {
+    animation: flicker_highlight_15 44.59854s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_16 {
+    0% {
+      left: 4.7156%;
+      bottom: 98.84246%;
+      width: 4.96px;
+      height: 5.80122px;
+    }
+    1.56814% {
+      left: 4.79915%;
+      bottom: 99.14282%;
+      width: 4.95497px;
+      height: 5.79533px;
+    }
+    5.64977% {
+      left: 5.04547%;
+      bottom: 99.77839%;
+      width: 4.92759px;
+      height: 5.76331px;
+    }
+    9.73141% {
+      left: 5.31433%;
+      bottom: 100.24396%;
+      width: 4.88622px;
+      height: 5.71492px;
+    }
+    13.67769% {
+      left: 5.57447%;
+      bottom: 100.50166%;
+      width: 4.83642px;
+      height: 5.65667px;
+    }
+    17.75932% {
+      left: 5.51009%;
+      bottom: 100.52761%;
+      width: 4.77886px;
+      height: 5.58935px;
+    }
+    21.84095% {
+      left: 4.8769%;
+      bottom: 100.07458%;
+      width: 4.76588px;
+      height: 5.57418px;
+    }
+    39.3227% {
+      left: 2.23355%;
+      bottom: 98.03011%;
+      width: 4.83216px;
+      height: 5.6517px;
+    }
+    43.40433% {
+      left: 1.58746%;
+      bottom: 97.80034%;
+      width: 4.8677px;
+      height: 5.69326px;
+    }
+    47.48596% {
+      left: 1.82387%;
+      bottom: 98.48957%;
+      width: 4.89808px;
+      height: 5.7288px;
+    }
+    89.06033% {
+      left: 6.45809%;
+      bottom: 92.15117%;
+      width: 5.01262px;
+      height: 5.86276px;
+    }
+    93.14197% {
+      left: 6.83773%;
+      bottom: 92.80404%;
+      width: 4.99363px;
+      height: 5.84054px;
+    }
+    97.2236% {
+      left: 6.81434%;
+      bottom: 92.9659%;
+      width: 4.93762px;
+      height: 5.77504px;
+    }
+    100% {
+      left: 6.64839%;
+      bottom: 92.83858%;
+      width: 4.90092px;
+      height: 5.73212px;
+    }
+  }
+  @keyframes flicker_16 {
+    0%, 12.41188%, 14.42472%, 17.3972%, 18.47936%, 34.1105%, 35.011%, 35.9115%, 92.58484%, 94.32497%, 98.73755%, 100%, 100% {
+      opacity: 0;
+    }
+    12.91509%, 17.66774%, 34.56075%, 35.46125%, 93.01987%, 99.05317% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_16 {
+    0%, 12.81445%, 13.01573%, 17.61363%, 17.72185%, 34.4707%, 34.6508%, 92.93286%, 93.10688%, 98.99004%, 99.11629%, 100% {
+      opacity: 0;
+    }
+    12.91509%, 17.66774%, 34.56075%, 93.01987%, 99.05317% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(16) {
+    animation: flight_16 3.675s linear 0s infinite alternate, flicker_16 37.85431s linear 0s infinite normal;
+    transform: rotate(-27deg);
+  }
+  .firefly:nth-child(16) .highlight {
+    animation: flicker_highlight_16 37.85431s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_17 {
+    0% {
+      left: 6.17252%;
+      bottom: 33.67742%;
+      width: 1.04px;
+      height: 1.05102px;
+    }
+    1.66175% {
+      left: 5.60054%;
+      bottom: 33.86057%;
+      width: 1.05992px;
+      height: 1.07115px;
+    }
+    3.5126% {
+      left: 5.10155%;
+      bottom: 34.16322%;
+      width: 1.097px;
+      height: 1.10862px;
+    }
+    5.36345% {
+      left: 4.85846%;
+      bottom: 34.52282%;
+      width: 1.14418px;
+      height: 1.15631px;
+    }
+    31.73273% {
+      left: 5.06526%;
+      bottom: 39.70441%;
+      width: 1.83111px;
+      height: 1.85052px;
+    }
+    33.58358% {
+      left: 4.87345%;
+      bottom: 39.80352%;
+      width: 1.88985px;
+      height: 1.90989px;
+    }
+    35.43442% {
+      left: 4.47563%;
+      bottom: 39.21433%;
+      width: 1.90098px;
+      height: 1.92113px;
+    }
+    36.06733% {
+      left: 4.37639%;
+      bottom: 39.00829%;
+      width: 1.89555px;
+      height: 1.91564px;
+    }
+    37.91818% {
+      left: 4.42814%;
+      bottom: 38.41617%;
+      width: 1.86531px;
+      height: 1.88508px;
+    }
+    39.76903% {
+      left: 5.11246%;
+      bottom: 38.46415%;
+      width: 1.83782px;
+      height: 1.8573px;
+    }
+    88.67232% {
+      left: 21.62989%;
+      bottom: 47.05716%;
+      width: 1.52209px;
+      height: 1.53823px;
+    }
+    90.52317% {
+      left: 22.30788%;
+      bottom: 47.12408%;
+      width: 1.50251px;
+      height: 1.51844px;
+    }
+    92.37402% {
+      left: 22.92277%;
+      bottom: 46.8842%;
+      width: 1.47794px;
+      height: 1.49361px;
+    }
+    100% {
+      left: 24.82658%;
+      bottom: 45.01265%;
+      width: 1.37587px;
+      height: 1.39046px;
+    }
+  }
+  @keyframes flicker_17 {
+    0%, 4.1651%, 5.04488%, 5.92466%, 41.63052%, 43.71317%, 59.42277%, 60.65104%, 75.27606%, 76.75613%, 98.14454%, 100%, 100% {
+      opacity: 0;
+    }
+    4.60499%, 5.48477%, 42.15118%, 59.72984%, 75.64608%, 98.6084% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_17 {
+    0%, 4.51701%, 4.69297%, 42.04705%, 42.25532%, 59.66842%, 59.79125%, 75.57208%, 75.72008%, 98.51563%, 98.70118%, 100% {
+      opacity: 0;
+    }
+    4.60499%, 42.15118%, 59.72984%, 75.64608%, 98.6084% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(17) {
+    animation: flight_17 8.10439s linear 0s infinite alternate, flicker_17 33.77455s linear 0s infinite normal;
+    transform: rotate(-1deg);
+  }
+  .firefly:nth-child(17) .highlight {
+    animation: flicker_highlight_17 33.77455s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_18 {
+    0% {
+      left: -1.83042%;
+      bottom: 84.08764%;
+      width: 4.896px;
+      height: 5.2162px;
+    }
+    29.30123% {
+      left: 2.79164%;
+      bottom: 83.81447%;
+      width: 4.45264px;
+      height: 4.74385px;
+    }
+    32.65805% {
+      left: 3.17378%;
+      bottom: 83.37668%;
+      width: 4.40414px;
+      height: 4.69218px;
+    }
+    36.01486% {
+      left: 3.10818%;
+      bottom: 82.59671%;
+      width: 4.38927px;
+      height: 4.67632px;
+    }
+    64.50223% {
+      left: 0.39318%;
+      bottom: 76.37572%;
+      width: 4.48092px;
+      height: 4.77397px;
+    }
+    67.85904% {
+      left: -0.24256%;
+      bottom: 75.91398%;
+      width: 4.49466px;
+      height: 4.78861px;
+    }
+    71.21585% {
+      left: -0.81483%;
+      bottom: 76.47541%;
+      width: 4.49953px;
+      height: 4.7938px;
+    }
+    81.87763% {
+      left: -1.66737%;
+      bottom: 78.95763%;
+      width: 4.49418px;
+      height: 4.7881px;
+    }
+    85.23444% {
+      left: -2.15853%;
+      bottom: 79.5234%;
+      width: 4.48242px;
+      height: 4.77557px;
+    }
+    88.59125% {
+      left: -1.40318%;
+      bottom: 79.70948%;
+      width: 4.46085px;
+      height: 4.75259px;
+    }
+    88.68095% {
+      left: -1.42066%;
+      bottom: 79.70513%;
+      width: 4.46019px;
+      height: 4.75189px;
+    }
+    92.03776% {
+      left: -2.11378%;
+      bottom: 79.32164%;
+      width: 4.46046px;
+      height: 4.75217px;
+    }
+    95.39457% {
+      left: -2.23898%;
+      bottom: 78.88189%;
+      width: 4.50713px;
+      height: 4.8019px;
+    }
+    100% {
+      left: -1.92929%;
+      bottom: 78.51855%;
+      width: 4.57388px;
+      height: 4.87301px;
+    }
+  }
+  @keyframes flicker_18 {
+    0%, 8.50726%, 9.94482%, 18.17175%, 20.4936%, 32.84671%, 34.9675%, 83.83397%, 85.36904%, 97.94964%, 100%, 100% {
+      opacity: 0;
+    }
+    8.86665%, 18.75221%, 33.3769%, 84.21774%, 98.46223% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_18 {
+    0%, 8.79477%, 8.93853%, 18.63612%, 18.8683%, 33.27086%, 33.48294%, 84.14098%, 84.29449%, 98.35971%, 98.56475%, 100% {
+      opacity: 0;
+    }
+    8.86665%, 18.75221%, 33.3769%, 84.21774%, 98.46223% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(18) {
+    animation: flight_18 4.46853s linear 0s infinite alternate, flicker_18 28.77319s linear 0s infinite normal;
+    transform: rotate(1deg);
+  }
+  .firefly:nth-child(18) .highlight {
+    animation: flicker_highlight_18 28.77319s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_19 {
+    0% {
+      left: 40.83051%;
+      bottom: 105.01693%;
+      width: 8.536px;
+      height: 9.5552px;
+    }
+    4.14469% {
+      left: 41.49663%;
+      bottom: 105.33059%;
+      width: 8.50315px;
+      height: 9.51843px;
+    }
+    8.36419% {
+      left: 42.31908%;
+      bottom: 105.45455%;
+      width: 8.47682px;
+      height: 9.48896px;
+    }
+    12.58369% {
+      left: 43.21411%;
+      bottom: 105.35848%;
+      width: 8.46072px;
+      height: 9.47093px;
+    }
+    24.57208% {
+      left: 45.71892%;
+      bottom: 104.54335%;
+      width: 8.4454px;
+      height: 9.45379px;
+    }
+    28.79158% {
+      left: 46.5591%;
+      bottom: 104.43987%;
+      width: 8.41993px;
+      height: 9.42527px;
+    }
+    33.01108% {
+      left: 47.15855%;
+      bottom: 104.5774%;
+      width: 8.37634px;
+      height: 9.37647px;
+    }
+    50.97656% {
+      left: 48.40819%;
+      bottom: 105.87468%;
+      width: 8.1617px;
+      height: 9.13621px;
+    }
+    55.19606% {
+      left: 48.31233%;
+      bottom: 106.37188%;
+      width: 8.11632px;
+      height: 9.08541px;
+    }
+    59.41556% {
+      left: 47.74398%;
+      bottom: 106.95%;
+      width: 8.09356px;
+      height: 9.05994px;
+    }
+    77.70252% {
+      left: 44.40221%;
+      bottom: 109.07908%;
+      width: 8.09219px;
+      height: 9.05839px;
+    }
+    81.92202% {
+      left: 43.83169%;
+      bottom: 109.56245%;
+      width: 8.06268px;
+      height: 9.02536px;
+    }
+    86.14152% {
+      left: 44.0031%;
+      bottom: 109.68503%;
+      width: 8.00589px;
+      height: 8.96179px;
+    }
+    100% {
+      left: 45.72641%;
+      bottom: 109.24319%;
+      width: 7.84366px;
+      height: 8.78019px;
+    }
+  }
+  @keyframes flicker_19 {
+    0%, 2.48393%, 4.34927%, 14.1936%, 15.89461%, 42.74456%, 44.20866%, 63.89868%, 65.22653%, 98.82337%, 100%, 100% {
+      opacity: 0;
+    }
+    2.95027%, 14.61885%, 43.11059%, 64.23064%, 99.11753% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_19 {
+    0%, 2.857%, 3.04353%, 14.5338%, 14.7039%, 43.03738%, 43.18379%, 64.16425%, 64.29703%, 99.0587%, 99.17636%, 100% {
+      opacity: 0;
+    }
+    2.95027%, 14.61885%, 43.11059%, 64.23064%, 99.11753% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(19) {
+    animation: flight_19 3.55492s linear 0s infinite alternate, flicker_19 36.99407s linear 0s infinite normal;
+    transform: rotate(20deg);
+  }
+  .firefly:nth-child(19) .highlight {
+    animation: flicker_highlight_19 36.99407s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_20 {
+    0% {
+      left: 84.49758%;
+      bottom: 36.75942%;
+      width: 1.016px;
+      height: 1.06192px;
+    }
+    5.92188% {
+      left: 83.87403%;
+      bottom: 37.70272%;
+      width: 1.00196px;
+      height: 1.04725px;
+    }
+    9.53424% {
+      left: 83.80616%;
+      bottom: 38.32752%;
+      width: 1.02022px;
+      height: 1.06634px;
+    }
+    13.1466% {
+      left: 84.10359%;
+      bottom: 38.86947%;
+      width: 1.04577px;
+      height: 1.09303px;
+    }
+    31.2271% {
+      left: 86.74599%;
+      bottom: 40.69232%;
+      width: 1.1756px;
+      height: 1.22874px;
+    }
+    34.83946% {
+      left: 87.29187%;
+      bottom: 41.07623%;
+      width: 1.16859px;
+      height: 1.22141px;
+    }
+    38.45182% {
+      left: 87.88857%;
+      bottom: 41.40437%;
+      width: 1.1832px;
+      height: 1.23669px;
+    }
+    78.5733% {
+      left: 94.38233%;
+      bottom: 44.14745%;
+      width: 1.53986px;
+      height: 1.60947px;
+    }
+    82.18566% {
+      left: 94.93663%;
+      bottom: 44.51352%;
+      width: 1.56659px;
+      height: 1.6374px;
+    }
+    85.79802% {
+      left: 95.43172%;
+      bottom: 44.98141%;
+      width: 1.58698px;
+      height: 1.65871px;
+    }
+    90.63601% {
+      left: 96.00048%;
+      bottom: 45.7239%;
+      width: 1.60535px;
+      height: 1.67791px;
+    }
+    94.24837% {
+      left: 95.60082%;
+      bottom: 46.29006%;
+      width: 1.60689px;
+      height: 1.67952px;
+    }
+    97.86073% {
+      left: 95.97511%;
+      bottom: 46.84801%;
+      width: 1.59612px;
+      height: 1.66827px;
+    }
+    100% {
+      left: 96.17039%;
+      bottom: 47.16186%;
+      width: 1.58293px;
+      height: 1.65448px;
+    }
+  }
+  @keyframes flicker_20 {
+    0%, 2.12655%, 2.97154%, 3.81653%, 13.1082%, 15.1274%, 38.01037%, 39.76377%, 79.32003%, 81.88062%, 97.17419%, 100%, 100% {
+      opacity: 0;
+    }
+    2.54905%, 3.39404%, 13.613%, 38.44872%, 79.96018%, 97.88064% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_20 {
+    0%, 2.46455%, 2.63355%, 13.51204%, 13.71396%, 38.36105%, 38.53639%, 79.83215%, 80.08821%, 97.73935%, 98.02193%, 100% {
+      opacity: 0;
+    }
+    2.54905%, 13.613%, 38.44872%, 79.96018%, 97.88064% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(20) {
+    animation: flight_20 4.15241s linear 0s infinite alternate, flicker_20 30.04078s linear 0s infinite normal;
+    transform: rotate(-29deg);
+  }
+  .firefly:nth-child(20) .highlight {
+    animation: flicker_highlight_20 30.04078s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_21 {
+    0% {
+      left: -0.50332%;
+      bottom: -4.70164%;
+      width: 8.44px;
+      height: 9.77014px;
+    }
+    7.52861% {
+      left: -1.4666%;
+      bottom: -6.75976%;
+      width: 8.43117px;
+      height: 9.75992px;
+    }
+    10.6447% {
+      left: -2.01618%;
+      bottom: -7.5227%;
+      width: 8.44422px;
+      height: 9.77502px;
+    }
+    13.7608% {
+      left: -2.67711%;
+      bottom: -8.1153%;
+      width: 8.47415px;
+      height: 9.80968px;
+    }
+    56.95907% {
+      left: -9.77636%;
+      bottom: -3.06784%;
+      width: 7.8965px;
+      height: 9.14099px;
+    }
+    60.07516% {
+      left: -10.19498%;
+      bottom: -3.18462%;
+      width: 7.95332px;
+      height: 9.20676px;
+    }
+    63.19126% {
+      left: -10.02472%;
+      bottom: -2.89537%;
+      width: 8.00424px;
+      height: 9.2657px;
+    }
+    67.77497% {
+      left: -9.27275%;
+      bottom: -2.20498%;
+      width: 8.04941px;
+      height: 9.31799px;
+    }
+    70.89106% {
+      left: -8.75368%;
+      bottom: -1.95436%;
+      width: 8.0889px;
+      height: 9.36372px;
+    }
+    74.00716% {
+      left: -8.26576%;
+      bottom: -1.95235%;
+      width: 8.13458px;
+      height: 9.41659px;
+    }
+    86.08942% {
+      left: -6.60741%;
+      bottom: -2.84655%;
+      width: 8.32151px;
+      height: 9.63298px;
+    }
+    89.20552% {
+      left: -6.33084%;
+      bottom: -2.63862%;
+      width: 8.37239px;
+      height: 9.69188px;
+    }
+    92.32162% {
+      left: -6.36785%;
+      bottom: -1.94084%;
+      width: 8.40625px;
+      height: 9.73107px;
+    }
+    100% {
+      left: -6.99633%;
+      bottom: 0.25783%;
+      width: 8.44062px;
+      height: 9.77086px;
+    }
+  }
+  @keyframes flicker_21 {
+    0%, 19.12312%, 21.8614%, 61.04362%, 63.33968%, 88.706%, 89.61073%, 90.51547%, 92.98588%, 95.61781%, 97.51267%, 100%, 100% {
+      opacity: 0;
+    }
+    19.80769%, 61.61763%, 89.15837%, 90.0631%, 93.64386%, 98.1345% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_21 {
+    0%, 19.67077%, 19.9446%, 61.50283%, 61.73244%, 89.06789%, 89.24884%, 93.51226%, 93.77546%, 98.01013%, 98.25887%, 100% {
+      opacity: 0;
+    }
+    19.80769%, 61.61763%, 89.15837%, 93.64386%, 98.1345% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(21) {
+    animation: flight_21 4.81372s linear 0s infinite alternate, flicker_21 22.63899s linear 0s infinite normal;
+    transform: rotate(10deg);
+  }
+  .firefly:nth-child(21) .highlight {
+    animation: flicker_highlight_21 22.63899s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_22 {
+    0% {
+      left: 17.93512%;
+      bottom: 68.36356%;
+      width: 2.144px;
+      height: 2.21518px;
+    }
+    9.82847% {
+      left: 18.00564%;
+      bottom: 69.66319%;
+      width: 2.25973px;
+      height: 2.33475px;
+    }
+    13.65116% {
+      left: 17.84406%;
+      bottom: 69.93828%;
+      width: 2.31643px;
+      height: 2.39333px;
+    }
+    17.47386% {
+      left: 17.49046%;
+      bottom: 69.83067%;
+      width: 2.37041px;
+      height: 2.44911px;
+    }
+    17.93676% {
+      left: 17.4399%;
+      bottom: 69.7853%;
+      width: 2.37518px;
+      height: 2.45403px;
+    }
+    21.75945% {
+      left: 17.29596%;
+      bottom: 69.28312%;
+      width: 2.41457px;
+      height: 2.49474px;
+    }
+    25.58215% {
+      left: 17.51251%;
+      bottom: 68.74417%;
+      width: 2.44492px;
+      height: 2.5261px;
+    }
+    44.50034% {
+      left: 19.8469%;
+      bottom: 66.41031%;
+      width: 2.5315px;
+      height: 2.61555px;
+    }
+    48.32304% {
+      left: 20.43749%;
+      bottom: 66.16315%;
+      width: 2.55376px;
+      height: 2.63855px;
+    }
+    52.14573% {
+      left: 21.07012%;
+      bottom: 66.20719%;
+      width: 2.57797px;
+      height: 2.66356px;
+    }
+    85.98997% {
+      left: 26.30425%;
+      bottom: 68.80518%;
+      width: 2.77912px;
+      height: 2.87139px;
+    }
+    89.81267% {
+      left: 27.03226%;
+      bottom: 68.90655%;
+      width: 2.77914px;
+      height: 2.87141px;
+    }
+    93.63536% {
+      left: 27.68282%;
+      bottom: 68.72152%;
+      width: 2.74972px;
+      height: 2.84101px;
+    }
+    100% {
+      left: 28.39961%;
+      bottom: 68.13704%;
+      width: 2.67634px;
+      height: 2.76519px;
+    }
+  }
+  @keyframes flicker_22 {
+    0%, 40.86279%, 41.52505%, 42.18731%, 56.68154%, 57.73442%, 83.75386%, 84.60999%, 86.132%, 87.20533%, 98.79458%, 100%, 100% {
+      opacity: 0;
+    }
+    41.19392%, 41.85618%, 56.94476%, 83.9679%, 86.40033%, 99.09594% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_22 {
+    0%, 41.12769%, 41.26014%, 56.89211%, 56.9974%, 83.92509%, 84.0107%, 86.34667%, 86.454%, 99.03567%, 99.15621%, 100% {
+      opacity: 0;
+    }
+    41.19392%, 56.94476%, 83.9679%, 86.40033%, 99.09594% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(22) {
+    animation: flight_22 3.92393s linear 0s infinite alternate, flicker_22 62.67851s linear 0s infinite normal;
+    transform: rotate(28deg);
+  }
+  .firefly:nth-child(22) .highlight {
+    animation: flicker_highlight_22 62.67851s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_23 {
+    0% {
+      left: 28.31821%;
+      bottom: 55.29726%;
+      width: 8.376px;
+      height: 8.5988px;
+    }
+    5.06519% {
+      left: 27.91512%;
+      bottom: 56.00645%;
+      width: 8.32964px;
+      height: 8.55121px;
+    }
+    9.30676% {
+      left: 27.3606%;
+      bottom: 56.54962%;
+      width: 8.29968px;
+      height: 8.52045px;
+    }
+    13.54832% {
+      left: 26.62317%;
+      bottom: 56.99623%;
+      width: 8.28146px;
+      height: 8.50175px;
+    }
+    15.78344% {
+      left: 26.17473%;
+      bottom: 57.16716%;
+      width: 8.27831px;
+      height: 8.49852px;
+    }
+    20.02501% {
+      left: 25.39246%;
+      bottom: 57.41738%;
+      width: 8.25433px;
+      height: 8.4739px;
+    }
+    24.26658% {
+      left: 24.77235%;
+      bottom: 57.55966%;
+      width: 8.21361px;
+      height: 8.43209px;
+    }
+    54.3594% {
+      left: 21.87946%;
+      bottom: 57.77904%;
+      width: 7.84631px;
+      height: 8.05503px;
+    }
+    58.60097% {
+      left: 21.68916%;
+      bottom: 57.90928%;
+      width: 7.78948px;
+      height: 7.99668px;
+    }
+    62.84253% {
+      left: 21.73344%;
+      bottom: 58.13324%;
+      width: 7.73167px;
+      height: 7.93733px;
+    }
+    68.5578% {
+      left: 22.08038%;
+      bottom: 58.53027%;
+      width: 7.65797px;
+      height: 7.86167px;
+    }
+    72.79937% {
+      left: 21.97245%;
+      bottom: 59.07981%;
+      width: 7.61245px;
+      height: 7.81494px;
+    }
+    77.04094% {
+      left: 21.39664%;
+      bottom: 59.7348%;
+      width: 7.60145px;
+      height: 7.80365px;
+    }
+    100% {
+      left: 17.52725%;
+      bottom: 62.57415%;
+      width: 7.68673px;
+      height: 7.8912px;
+    }
+  }
+  @keyframes flicker_23 {
+    0%, 2.33552%, 2.88609%, 3.43666%, 24.83736%, 26.1608%, 48.47882%, 49.69904%, 64.97869%, 66.39406%, 98.47765%, 100%, 100% {
+      opacity: 0;
+    }
+    2.6108%, 3.16137%, 25.16822%, 48.78387%, 65.33253%, 98.85824% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_23 {
+    0%, 2.55575%, 2.66586%, 25.10205%, 25.23439%, 48.72286%, 48.84489%, 65.26177%, 65.4033%, 98.78212%, 98.93436%, 100% {
+      opacity: 0;
+    }
+    2.6108%, 25.16822%, 48.78387%, 65.33253%, 98.85824% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(23) {
+    animation: flight_23 3.53643s linear 0s infinite alternate, flicker_23 41.44937s linear 0s infinite normal;
+    transform: rotate(0deg);
+  }
+  .firefly:nth-child(23) .highlight {
+    animation: flicker_highlight_23 41.44937s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_24 {
+    0% {
+      left: 74.00559%;
+      bottom: 29.49037%;
+      width: 6.896px;
+      height: 7.28769px;
+    }
+    18.88582% {
+      left: 79.66817%;
+      bottom: 28.29382%;
+      width: 7.29664px;
+      height: 7.71109px;
+    }
+    20.9828% {
+      left: 80.30271%;
+      bottom: 28.28439%;
+      width: 7.34187px;
+      height: 7.75889px;
+    }
+    23.07979% {
+      left: 80.92249%;
+      bottom: 28.39926%;
+      width: 7.38693px;
+      height: 7.80651px;
+    }
+    34.65265% {
+      left: 84.2194%;
+      bottom: 29.70815%;
+      width: 7.63px;
+      height: 8.06338px;
+    }
+    36.74964% {
+      left: 84.69008%;
+      bottom: 30.33319%;
+      width: 7.66005px;
+      height: 8.09514px;
+    }
+    38.84662% {
+      left: 84.82382%;
+      bottom: 31.22192%;
+      width: 7.66156px;
+      height: 8.09673px;
+    }
+    59.45345% {
+      left: 83.41067%;
+      bottom: 39.96202%;
+      width: 7.46529px;
+      height: 7.88932px;
+    }
+    61.55043% {
+      left: 83.07589%;
+      bottom: 40.79017%;
+      width: 7.46522px;
+      height: 7.88924px;
+    }
+    63.64742% {
+      left: 82.7273%;
+      bottom: 40.39779%;
+      width: 7.51231px;
+      height: 7.93901px;
+    }
+    65.69103% {
+      left: 82.58701%;
+      bottom: 39.73793%;
+      width: 7.55px;
+      height: 7.97884px;
+    }
+    67.78802% {
+      left: 82.89153%;
+      bottom: 39.15589%;
+      width: 7.59348px;
+      height: 8.02479px;
+    }
+    69.885% {
+      left: 83.69808%;
+      bottom: 38.9965%;
+      width: 7.62275px;
+      height: 8.05572px;
+    }
+    100% {
+      left: 96.40205%;
+      bottom: 41.53049%;
+      width: 7.77052px;
+      height: 8.21188px;
+    }
+  }
+  @keyframes flicker_24 {
+    0%, 18.56889%, 21.06982%, 22.17974%, 24.373%, 50.0081%, 52.49132%, 60.51788%, 62.64913%, 97.28321%, 100%, 100% {
+      opacity: 0;
+    }
+    19.19412%, 22.72806%, 50.62891%, 61.05069%, 97.96241% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_24 {
+    0%, 19.06908%, 19.31917%, 22.61839%, 22.83772%, 50.50475%, 50.75307%, 60.94413%, 61.15726%, 97.82657%, 98.09825%, 100% {
+      opacity: 0;
+    }
+    19.19412%, 22.72806%, 50.62891%, 61.05069%, 97.96241% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(24) {
+    animation: flight_24 7.15313s linear 0s infinite alternate, flicker_24 21.50474s linear 0s infinite normal;
+    transform: rotate(-7deg);
+  }
+  .firefly:nth-child(24) .highlight {
+    animation: flicker_highlight_24 21.50474s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_25 {
+    0% {
+      left: 75.8174%;
+      bottom: 57.9911%;
+      width: 8.32px;
+      height: 9.7993px;
+    }
+    25.50763% {
+      left: 81.44541%;
+      bottom: 62.33671%;
+      width: 8.52747px;
+      height: 10.04365px;
+    }
+    28.61578% {
+      left: 82.00648%;
+      bottom: 62.89489%;
+      width: 8.5628px;
+      height: 10.08526px;
+    }
+    31.72394% {
+      left: 82.40569%;
+      bottom: 63.44972%;
+      width: 8.60653px;
+      height: 10.13677px;
+    }
+    32.52669% {
+      left: 82.46381%;
+      bottom: 63.585%;
+      width: 8.61932px;
+      height: 10.15184px;
+    }
+    35.63484% {
+      left: 82.51385%;
+      bottom: 63.97704%;
+      width: 8.67454px;
+      height: 10.21688px;
+    }
+    38.743% {
+      left: 82.37728%;
+      bottom: 64.2036%;
+      width: 8.73172px;
+      height: 10.28422px;
+    }
+    65.26871% {
+      left: 78.75574%;
+      bottom: 64.19792%;
+      width: 8.26072px;
+      height: 9.72948px;
+    }
+    68.37686% {
+      left: 78.7587%;
+      bottom: 64.30451%;
+      width: 8.32039px;
+      height: 9.79976px;
+    }
+    71.48502% {
+      left: 79.09744%;
+      bottom: 64.45251%;
+      width: 8.37707px;
+      height: 9.86652px;
+    }
+    87.26256% {
+      left: 82.14911%;
+      bottom: 65.30851%;
+      width: 8.61829px;
+      height: 10.15063px;
+    }
+    90.37071% {
+      left: 82.9882%;
+      bottom: 65.16916%;
+      width: 8.64685px;
+      height: 10.18426px;
+    }
+    93.47887% {
+      left: 83.69444%;
+      bottom: 64.63841%;
+      width: 8.62984px;
+      height: 10.16423px;
+    }
+    100% {
+      left: 84.46664%;
+      bottom: 63.41241%;
+      width: 8.54691px;
+      height: 10.06655px;
+    }
+  }
+  @keyframes flicker_25 {
+    0%, 3.27217%, 6.35777%, 10.39859%, 12.91578%, 19.51918%, 21.60837%, 81.54909%, 83.76919%, 98.03087%, 100%, 100% {
+      opacity: 0;
+    }
+    4.04357%, 11.02789%, 20.04148%, 82.10412%, 98.52315% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_25 {
+    0%, 3.88929%, 4.19785%, 10.90203%, 11.15375%, 19.93702%, 20.14594%, 81.99311%, 82.21512%, 98.42469%, 98.62161%, 100% {
+      opacity: 0;
+    }
+    4.04357%, 11.02789%, 20.04148%, 82.10412%, 98.52315% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(25) {
+    animation: flight_25 4.82601s linear 0s infinite alternate, flicker_25 25.53569s linear 0s infinite normal;
+    transform: rotate(-22deg);
+  }
+  .firefly:nth-child(25) .highlight {
+    animation: flicker_highlight_25 25.53569s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_26 {
+    0% {
+      left: 14.63713%;
+      bottom: -3.37792%;
+      width: 5.712px;
+      height: 5.88679px;
+    }
+    4.1764% {
+      left: 15.31968%;
+      bottom: -3.27535%;
+      width: 5.68156px;
+      height: 5.85541px;
+    }
+    8.71225% {
+      left: 16.05503%;
+      bottom: -3.58906%;
+      width: 5.66325px;
+      height: 5.83654px;
+    }
+    13.2481% {
+      left: 16.37399%;
+      bottom: -4.35598%;
+      width: 5.67693px;
+      height: 5.85065px;
+    }
+    30.14008% {
+      left: 16.18446%;
+      bottom: -1.82064%;
+      width: 5.78756px;
+      height: 5.96466px;
+    }
+    34.67593% {
+      left: 16.03971%;
+      bottom: -2.5905%;
+      width: 5.81931px;
+      height: 5.99738px;
+    }
+    39.21178% {
+      left: 15.80233%;
+      bottom: -3.32755%;
+      width: 5.85321px;
+      height: 6.03232px;
+    }
+    49.18743% {
+      left: 15.08009%;
+      bottom: -4.86171%;
+      width: 5.93171px;
+      height: 6.11322px;
+    }
+    53.72328% {
+      left: 14.65258%;
+      bottom: -5.60272%;
+      width: 5.94037px;
+      height: 6.12215px;
+    }
+    58.25912% {
+      left: 14.26486%;
+      bottom: -4.96487%;
+      width: 5.90862px;
+      height: 6.08942px;
+    }
+    61.74903% {
+      left: 14.07442%;
+      bottom: -5.10516%;
+      width: 5.86918px;
+      height: 6.04878px;
+    }
+    66.28487% {
+      left: 13.89789%;
+      bottom: -5.18403%;
+      width: 5.81391px;
+      height: 5.99182px;
+    }
+    70.82072% {
+      left: 13.79558%;
+      bottom: -5.15884%;
+      width: 5.75591px;
+      height: 5.93204px;
+    }
+    100% {
+      left: 13.62551%;
+      bottom: -4.3494%;
+      width: 5.37362px;
+      height: 5.53805px;
+    }
+  }
+  @keyframes flicker_26 {
+    0%, 18.62488%, 19.15984%, 19.6948%, 32.49981%, 33.36%, 34.22019%, 90.34361%, 91.41574%, 95.35273%, 96.83155%, 98.19969%, 100%, 100% {
+      opacity: 0;
+    }
+    18.89236%, 19.42732%, 32.9299%, 33.79009%, 90.61165%, 95.72244%, 98.64977% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_26 {
+    0%, 18.83886%, 18.94585%, 32.84389%, 33.01592%, 90.55804%, 90.66525%, 95.6485%, 95.79638%, 98.55975%, 98.73978%, 100% {
+      opacity: 0;
+    }
+    18.89236%, 32.9299%, 90.61165%, 95.72244%, 98.64977% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(26) {
+    animation: flight_26 3.30699s linear 0s infinite alternate, flicker_26 39.43679s linear 0s infinite normal;
+    transform: rotate(15deg);
+  }
+  .firefly:nth-child(26) .highlight {
+    animation: flicker_highlight_26 39.43679s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_27 {
+    0% {
+      left: 31.67557%;
+      bottom: 25.87906%;
+      width: 1.776px;
+      height: 1.92199px;
+    }
+    1.5062% {
+      left: 31.08431%;
+      bottom: 25.40957%;
+      width: 1.80866px;
+      height: 1.95733px;
+    }
+    2.81994% {
+      left: 30.48859%;
+      bottom: 25.0278%;
+      width: 1.8158px;
+      height: 1.96506px;
+    }
+    4.13367% {
+      left: 29.91092%;
+      bottom: 24.74814%;
+      width: 1.7972px;
+      height: 1.94493px;
+    }
+    24.30027% {
+      left: 22.84077%;
+      bottom: 22.51464%;
+      width: 1.22085px;
+      height: 1.32121px;
+    }
+    25.614% {
+      left: 22.61409%;
+      bottom: 22.14239%;
+      width: 1.18109px;
+      height: 1.27818px;
+    }
+    26.92774% {
+      left: 22.74043%;
+      bottom: 21.59758%;
+      width: 1.15154px;
+      height: 1.2462px;
+    }
+    27.36776% {
+      left: 22.86182%;
+      bottom: 21.41296%;
+      width: 1.14647px;
+      height: 1.24071px;
+    }
+    28.6815% {
+      left: 22.96405%;
+      bottom: 20.7368%;
+      width: 1.15215px;
+      height: 1.24685px;
+    }
+    29.99523% {
+      left: 22.44348%;
+      bottom: 20.50623%;
+      width: 1.19333px;
+      height: 1.29142px;
+    }
+    68.7316% {
+      left: 5.13262%;
+      bottom: 23.80922%;
+      width: 2.29856px;
+      height: 2.4875px;
+    }
+    70.04534% {
+      left: 4.40667%;
+      bottom: 23.86475%;
+      width: 2.31151px;
+      height: 2.50152px;
+    }
+    71.35907% {
+      left: 3.81127%;
+      bottom: 23.81173%;
+      width: 2.28666px;
+      height: 2.47463px;
+    }
+    100% {
+      left: 15.05687%;
+      bottom: 21.44344%;
+      width: 1.29814px;
+      height: 1.40485px;
+    }
+  }
+  @keyframes flicker_27 {
+    0%, 24.20613%, 26.88038%, 49.99179%, 53.48277%, 54.65767%, 56.34842%, 58.03917%, 69.68565%, 72.57092%, 97.71611%, 100%, 100% {
+      opacity: 0;
+    }
+    24.87469%, 50.86454%, 55.50304%, 57.1938%, 70.40697%, 98.28708% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_27 {
+    0%, 24.74098%, 25.00841%, 50.68999%, 51.03909%, 55.33397%, 55.67212%, 70.2627%, 70.55123%, 98.17289%, 98.40128%, 100% {
+      opacity: 0;
+    }
+    24.87469%, 50.86454%, 55.50304%, 70.40697%, 98.28708% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(27) {
+    animation: flight_27 11.41782s linear 0s infinite alternate, flicker_27 24.04892s linear 0s infinite normal;
+    transform: rotate(25deg);
+  }
+  .firefly:nth-child(27) .highlight {
+    animation: flicker_highlight_27 24.04892s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_28 {
+    0% {
+      left: 23.61056%;
+      bottom: 66.6819%;
+      width: 1.944px;
+      height: 2.30675px;
+    }
+    4.23225% {
+      left: 23.35319%;
+      bottom: 65.86119%;
+      width: 1.96901px;
+      height: 2.33643px;
+    }
+    7.59576% {
+      left: 23.37156%;
+      bottom: 65.25719%;
+      width: 1.9969px;
+      height: 2.36952px;
+    }
+    10.95928% {
+      left: 23.63691%;
+      bottom: 64.7793%;
+      width: 2.03038px;
+      height: 2.40925px;
+    }
+    49.28673% {
+      left: 28.83196%;
+      bottom: 61.29422%;
+      width: 2.41533px;
+      height: 2.86603px;
+    }
+    52.65024% {
+      left: 29.3336%;
+      bottom: 61.14236%;
+      width: 2.45281px;
+      height: 2.9105px;
+    }
+    56.01376% {
+      left: 29.84555%;
+      bottom: 61.16341%;
+      width: 2.49196px;
+      height: 2.95696px;
+    }
+    61.58512% {
+      left: 30.66606%;
+      bottom: 61.46901%;
+      width: 2.55598px;
+      height: 3.03293px;
+    }
+    64.94863% {
+      left: 31.07512%;
+      bottom: 61.75511%;
+      width: 2.59813px;
+      height: 3.08294px;
+    }
+    68.31215% {
+      left: 31.38176%;
+      bottom: 62.13349%;
+      width: 2.64226px;
+      height: 3.13531px;
+    }
+    71.69412% {
+      left: 31.57985%;
+      bottom: 62.59136%;
+      width: 2.6871px;
+      height: 3.18851px;
+    }
+    75.05763% {
+      left: 31.63134%;
+      bottom: 63.22932%;
+      width: 2.71849px;
+      height: 3.22576px;
+    }
+    78.42115% {
+      left: 31.5085%;
+      bottom: 63.94864%;
+      width: 2.72903px;
+      height: 3.23827px;
+    }
+    100% {
+      left: 29.87064%;
+      bottom: 68.4385%;
+      width: 2.67536px;
+      height: 3.17459px;
+    }
+  }
+  @keyframes flicker_28 {
+    0%, 30.37485%, 31.40103%, 40.44101%, 41.74668%, 56.96195%, 57.95118%, 90.27951%, 91.30313%, 98.94858%, 100%, 100% {
+      opacity: 0;
+    }
+    30.63139%, 40.76743%, 57.20925%, 90.53542%, 99.21143% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_28 {
+    0%, 30.58008%, 30.6827%, 40.70214%, 40.83271%, 57.15979%, 57.25872%, 90.48424%, 90.5866%, 99.15886%, 99.26401%, 100% {
+      opacity: 0;
+    }
+    30.63139%, 40.76743%, 57.20925%, 90.53542%, 99.21143% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(28) {
+    animation: flight_28 4.45962s linear 0s infinite alternate, flicker_28 47.34632s linear 0s infinite normal;
+    transform: rotate(8deg);
+  }
+  .firefly:nth-child(28) .highlight {
+    animation: flicker_highlight_28 47.34632s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_29 {
+    0% {
+      left: 80.73788%;
+      bottom: 16.5943%;
+      width: 6.776px;
+      height: 7.96044px;
+    }
+    18.88204% {
+      left: 81.30316%;
+      bottom: 13.23305%;
+      width: 6.97421px;
+      height: 8.1933px;
+    }
+    22.78506% {
+      left: 81.271%;
+      bottom: 12.36114%;
+      width: 6.98792px;
+      height: 8.2094px;
+    }
+    26.68808% {
+      left: 81.02105%;
+      bottom: 11.77927%;
+      width: 6.94924px;
+      height: 8.16396px;
+    }
+    30.13287% {
+      left: 80.77078%;
+      bottom: 11.61964%;
+      width: 6.90047px;
+      height: 8.10667px;
+    }
+    34.03589% {
+      left: 80.62449%;
+      bottom: 11.7812%;
+      width: 6.84091px;
+      height: 8.0367px;
+    }
+    37.93891% {
+      left: 80.67542%;
+      bottom: 12.31058%;
+      width: 6.79031px;
+      height: 7.97726px;
+    }
+    66.70773% {
+      left: 82.13689%;
+      bottom: 17.6474%;
+      width: 6.53799px;
+      height: 7.68083px;
+    }
+    70.61075% {
+      left: 82.12268%;
+      bottom: 18.40362%;
+      width: 6.50452px;
+      height: 7.64151px;
+    }
+    74.51377% {
+      left: 81.89415%;
+      bottom: 19.15509%;
+      width: 6.47376px;
+      height: 7.60537px;
+    }
+    91.93245% {
+      left: 80.03421%;
+      bottom: 22.30036%;
+      width: 6.35525px;
+      height: 7.46615px;
+    }
+    95.83547% {
+      left: 79.4058%;
+      bottom: 22.69787%;
+      width: 6.31958px;
+      height: 7.42424px;
+    }
+    99.73849% {
+      left: 78.701%;
+      bottom: 22.58427%;
+      width: 6.28334px;
+      height: 7.38167px;
+    }
+    100% {
+      left: 78.66115%;
+      bottom: 22.55258%;
+      width: 6.28147px;
+      height: 7.37947px;
+    }
+  }
+  @keyframes flicker_29 {
+    0%, 34.64505%, 35.71527%, 62.66867%, 64.60025%, 76.4045%, 78.18766%, 79.92744%, 81.90983%, 97.96729%, 100%, 100% {
+      opacity: 0;
+    }
+    34.9126%, 63.15157%, 76.85029%, 80.42303%, 98.47547% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_29 {
+    0%, 34.85909%, 34.96611%, 63.05499%, 63.24815%, 76.76113%, 76.93945%, 80.32391%, 80.52215%, 98.37383%, 98.5771%, 100% {
+      opacity: 0;
+    }
+    34.9126%, 63.15157%, 76.85029%, 80.42303%, 98.47547% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(29) {
+    animation: flight_29 3.84318s linear 0s infinite alternate, flicker_29 34.42525s linear 0s infinite normal;
+    transform: rotate(9deg);
+  }
+  .firefly:nth-child(29) .highlight {
+    animation: flicker_highlight_29 34.42525s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_30 {
+    0% {
+      left: 75.71739%;
+      bottom: 79.85833%;
+      width: 5.216px;
+      height: 6.13819px;
+    }
+    13.98558% {
+      left: 75.27954%;
+      bottom: 83.29977%;
+      width: 5.3062px;
+      height: 6.24433px;
+    }
+    17.29973% {
+      left: 74.95769%;
+      bottom: 84.04522%;
+      width: 5.31922px;
+      height: 6.25966px;
+    }
+    20.61389% {
+      left: 74.60293%;
+      bottom: 83.37204%;
+      width: 5.28915px;
+      height: 6.22427px;
+    }
+    22.31253% {
+      left: 74.52791%;
+      bottom: 82.97318%;
+      width: 5.27514px;
+      height: 6.20779px;
+    }
+    25.62668% {
+      left: 74.42674%;
+      bottom: 82.15666%;
+      width: 5.2659px;
+      height: 6.19691px;
+    }
+    28.94083% {
+      left: 74.38109%;
+      bottom: 81.36577%;
+      width: 5.27637px;
+      height: 6.20924px;
+    }
+    34.23303% {
+      left: 74.39519%;
+      bottom: 80.22801%;
+      width: 5.32099px;
+      height: 6.26174px;
+    }
+    37.54718% {
+      left: 74.67743%;
+      bottom: 79.73879%;
+      width: 5.36263px;
+      height: 6.31074px;
+    }
+    40.86134% {
+      left: 75.22839%;
+      bottom: 79.68531%;
+      width: 5.40943px;
+      height: 6.36581px;
+    }
+    42.27549% {
+      left: 75.49178%;
+      bottom: 79.81035%;
+      width: 5.42604px;
+      height: 6.38537px;
+    }
+    45.58965% {
+      left: 75.99185%;
+      bottom: 80.03924%;
+      width: 5.47487px;
+      height: 6.44283px;
+    }
+    48.9038% {
+      left: 76.33949%;
+      bottom: 80.18739%;
+      width: 5.53083px;
+      height: 6.50868px;
+    }
+    100% {
+      left: 79.22899%;
+      bottom: 81.15492%;
+      width: 6.44617px;
+      height: 7.58585px;
+    }
+  }
+  @keyframes flicker_30 {
+    0%, 17.60557%, 19.2051%, 32.47581%, 33.54393%, 34.61205%, 48.9348%, 50.86072%, 77.26029%, 79.46681%, 98.15767%, 100%, 100% {
+      opacity: 0;
+    }
+    18.00545%, 33.00987%, 34.07799%, 49.41628%, 77.81192%, 98.61825% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_30 {
+    0%, 17.92548%, 18.08543%, 32.90306%, 33.11668%, 49.31998%, 49.51257%, 77.7016%, 77.92225%, 98.52614%, 98.71037%, 100% {
+      opacity: 0;
+    }
+    18.00545%, 33.00987%, 49.41628%, 77.81192%, 98.61825% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(30) {
+    animation: flight_30 4.52604s linear 0s infinite alternate, flicker_30 32.52989s linear 0s infinite normal;
+    transform: rotate(29deg);
+  }
+  .firefly:nth-child(30) .highlight {
+    animation: flicker_highlight_30 32.52989s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_31 {
+    0% {
+      left: -8.01958%;
+      bottom: 9.68536%;
+      width: 7.584px;
+      height: 8.51987px;
+    }
+    3.76931% {
+      left: -8.80803%;
+      bottom: 10.15482%;
+      width: 7.61737px;
+      height: 8.55735px;
+    }
+    7.10297% {
+      left: -9.25874%;
+      bottom: 10.43039%;
+      width: 7.66777px;
+      height: 8.61398px;
+    }
+    10.43662% {
+      left: -8.66536%;
+      bottom: 10.09073%;
+      width: 7.70292px;
+      height: 8.65346px;
+    }
+    23.04663% {
+      left: -5.79451%;
+      bottom: 8.41662%;
+      width: 7.74037px;
+      height: 8.69553px;
+    }
+    26.38029% {
+      left: -5.36342%;
+      bottom: 7.77073%;
+      width: 7.77105px;
+      height: 8.72999px;
+    }
+    29.71394% {
+      left: -6.06938%;
+      bottom: 7.42279%;
+      width: 7.81003px;
+      height: 8.77379px;
+    }
+    44.37562% {
+      left: -9.96787%;
+      bottom: 7.28517%;
+      width: 7.91178px;
+      height: 8.88809px;
+    }
+    47.70928% {
+      left: -9.31437%;
+      bottom: 7.73296%;
+      width: 7.933px;
+      height: 8.91193px;
+    }
+    51.04293% {
+      left: -9.42318%;
+      bottom: 8.62259%;
+      width: 7.93918px;
+      height: 8.91888px;
+    }
+    86.70081% {
+      left: -5.89639%;
+      bottom: 18.20028%;
+      width: 7.88291px;
+      height: 8.85567px;
+    }
+    90.03446% {
+      left: -5.19819%;
+      bottom: 18.79144%;
+      width: 7.87867px;
+      height: 8.8509px;
+    }
+    93.36812% {
+      left: -4.36945%;
+      bottom: 18.42478%;
+      width: 7.87931px;
+      height: 8.85162px;
+    }
+    100% {
+      left: -3.31669%;
+      bottom: 16.94089%;
+      width: 7.88552px;
+      height: 8.8586px;
+    }
+  }
+  @keyframes flicker_31 {
+    0%, 22.56097%, 24.86803%, 28.73114%, 30.9607%, 69.44259%, 71.46585%, 86.59072%, 88.44737%, 97.84979%, 100%, 100% {
+      opacity: 0;
+    }
+    23.13773%, 29.28853%, 69.9484%, 87.05488%, 98.38734% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_31 {
+    0%, 23.02238%, 23.25309%, 29.17705%, 29.40001%, 69.84724%, 70.04957%, 86.96205%, 87.14772%, 98.27983%, 98.49485%, 100% {
+      opacity: 0;
+    }
+    23.13773%, 29.28853%, 69.9484%, 87.05488%, 98.38734% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(31) {
+    animation: flight_31 4.49957s linear 0s infinite alternate, flicker_31 28.37946s linear 0s infinite normal;
+    transform: rotate(23deg);
+  }
+  .firefly:nth-child(31) .highlight {
+    animation: flicker_highlight_31 28.37946s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_32 {
+    0% {
+      left: 89.06461%;
+      bottom: 70.93414%;
+      width: 1.768px;
+      height: 1.76977px;
+    }
+    3.15484% {
+      left: 88.47044%;
+      bottom: 71.94104%;
+      width: 1.76832px;
+      height: 1.77009px;
+    }
+    5.0793% {
+      left: 88.27365%;
+      bottom: 72.60214%;
+      width: 1.78164px;
+      height: 1.78342px;
+    }
+    7.00375% {
+      left: 88.26747%;
+      bottom: 73.26054%;
+      width: 1.80774px;
+      height: 1.80955px;
+    }
+    33.08091% {
+      left: 90.60785%;
+      bottom: 81.59161%;
+      width: 2.29188px;
+      height: 2.29417px;
+    }
+    35.00537% {
+      left: 90.96934%;
+      bottom: 82.16796%;
+      width: 2.32398px;
+      height: 2.3263px;
+    }
+    36.92983% {
+      left: 91.49949%;
+      bottom: 82.64543%;
+      width: 2.34976px;
+      height: 2.35211px;
+    }
+    49.41137% {
+      left: 95.6956%;
+      bottom: 84.90913%;
+      width: 2.46582px;
+      height: 2.46828px;
+    }
+    51.33583% {
+      left: 96.11223%;
+      bottom: 85.51421%;
+      width: 2.48567px;
+      height: 2.48816px;
+    }
+    53.26029% {
+      left: 96.08453%;
+      bottom: 86.23815%;
+      width: 2.50121px;
+      height: 2.50371px;
+    }
+    87.56247% {
+      left: 89.75924%;
+      bottom: 97.78155%;
+      width: 2.65627px;
+      height: 2.65893px;
+    }
+    89.48693% {
+      left: 89.73798%;
+      bottom: 98.4965%;
+      width: 2.68183px;
+      height: 2.68451px;
+    }
+    91.41139% {
+      left: 90.41014%;
+      bottom: 98.60293%;
+      width: 2.71475px;
+      height: 2.71746px;
+    }
+    100% {
+      left: 93.39355%;
+      bottom: 97.5054%;
+      width: 2.80247px;
+      height: 2.80527px;
+    }
+  }
+  @keyframes flicker_32 {
+    0%, 5.92896%, 7.79036%, 13.50185%, 15.55437%, 73.35115%, 74.68997%, 84.93433%, 86.51006%, 97.85044%, 100%, 100% {
+      opacity: 0;
+    }
+    6.39431%, 14.01498%, 73.68585%, 85.32827%, 98.38783% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_32 {
+    0%, 6.30124%, 6.48738%, 13.91236%, 14.11761%, 73.61891%, 73.75279%, 85.24948%, 85.40705%, 98.28035%, 98.49531%, 100% {
+      opacity: 0;
+    }
+    6.39431%, 14.01498%, 73.68585%, 85.32827%, 98.38783% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(32) {
+    animation: flight_32 7.7944s linear 0s infinite alternate, flicker_32 34.80201s linear 0s infinite normal;
+    transform: rotate(25deg);
+  }
+  .firefly:nth-child(32) .highlight {
+    animation: flicker_highlight_32 34.80201s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_33 {
+    0% {
+      left: 8.88174%;
+      bottom: 70.02651%;
+      width: 4.672px;
+      height: 5.59519px;
+    }
+    1.2382% {
+      left: 8.75283%;
+      bottom: 69.98468%;
+      width: 4.65209px;
+      height: 5.57134px;
+    }
+    4.40284% {
+      left: 8.34179%;
+      bottom: 70.08773%;
+      width: 4.60608px;
+      height: 5.51624px;
+    }
+    7.56749% {
+      left: 7.88159%;
+      bottom: 70.40238%;
+      width: 4.56932px;
+      height: 5.47222px;
+    }
+    16.68847% {
+      left: 6.53182%;
+      bottom: 71.79273%;
+      width: 4.49625px;
+      height: 5.38471px;
+    }
+    19.85312% {
+      left: 5.94274%;
+      bottom: 71.94209%;
+      width: 4.46451px;
+      height: 5.3467px;
+    }
+    23.01776% {
+      left: 5.37791%;
+      bottom: 71.63013%;
+      width: 4.43429px;
+      height: 5.3105px;
+    }
+    44.16589% {
+      left: 2.58778%;
+      bottom: 67.6799%;
+      width: 4.28536px;
+      height: 5.13215px;
+    }
+    47.33053% {
+      left: 2.14939%;
+      bottom: 67.03258%;
+      width: 4.29428px;
+      height: 5.14283px;
+    }
+    50.49518% {
+      left: 1.98026%;
+      bottom: 66.74125%;
+      width: 4.34855px;
+      height: 5.20782px;
+    }
+    51.73338% {
+      left: 2.00243%;
+      bottom: 66.75456%;
+      width: 4.37143px;
+      height: 5.23522px;
+    }
+    54.89802% {
+      left: 1.99135%;
+      bottom: 67.06064%;
+      width: 4.42738px;
+      height: 5.30223px;
+    }
+    58.06267% {
+      left: 1.9069%;
+      bottom: 67.62157%;
+      width: 4.47208px;
+      height: 5.35576px;
+    }
+    100% {
+      left: 0.0404%;
+      bottom: 77.33571%;
+      width: 4.8694px;
+      height: 5.83159px;
+    }
+  }
+  @keyframes flicker_33 {
+    0%, 28.39568%, 29.86622%, 62.73658%, 64.0857%, 72.02162%, 73.29149%, 86.53122%, 87.83852%, 98.54396%, 100%, 100% {
+      opacity: 0;
+    }
+    28.76332%, 63.07386%, 72.33909%, 86.85804%, 98.90797% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_33 {
+    0%, 28.68979%, 28.83684%, 63.0064%, 63.14132%, 72.27559%, 72.40258%, 86.79268%, 86.92341%, 98.83517%, 98.98077%, 100% {
+      opacity: 0;
+    }
+    28.76332%, 63.07386%, 72.33909%, 86.85804%, 98.90797% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(33) {
+    animation: flight_33 4.73987s linear 0s infinite alternate, flicker_33 51.35468s linear 0s infinite normal;
+    transform: rotate(-6deg);
+  }
+  .firefly:nth-child(33) .highlight {
+    animation: flicker_highlight_33 51.35468s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_34 {
+    0% {
+      left: 97.99603%;
+      bottom: 53.75948%;
+      width: 8.848px;
+      height: 10.54151px;
+    }
+    2.31897% {
+      left: 98.16777%;
+      bottom: 54.13932%;
+      width: 8.84397px;
+      height: 10.53671px;
+    }
+    7.57821% {
+      left: 98.74136%;
+      bottom: 54.88129%;
+      width: 8.85447px;
+      height: 10.54922px;
+    }
+    12.83745% {
+      left: 99.43665%;
+      bottom: 55.37062%;
+      width: 8.8858px;
+      height: 10.58654px;
+    }
+    18.16633% {
+      left: 100.13503%;
+      bottom: 55.56834%;
+      width: 8.9305px;
+      height: 10.63979px;
+    }
+    23.42557% {
+      left: 101.05001%;
+      bottom: 55.74859%;
+      width: 8.94838px;
+      height: 10.6611px;
+    }
+    28.68481% {
+      left: 101.78915%;
+      bottom: 55.80444%;
+      width: 8.91664px;
+      height: 10.62329px;
+    }
+    56.75977% {
+      left: 103.72447%;
+      bottom: 55.57722%;
+      width: 8.63809px;
+      height: 10.29142px;
+    }
+    62.01901% {
+      left: 104.01101%;
+      bottom: 55.91268%;
+      width: 8.58816px;
+      height: 10.23193px;
+    }
+    67.27825% {
+      left: 104.15657%;
+      bottom: 56.60483%;
+      width: 8.55125px;
+      height: 10.18796px;
+    }
+    84.83974% {
+      left: 104.19108%;
+      bottom: 59.61644%;
+      width: 8.47974px;
+      height: 10.10276px;
+    }
+    90.09898% {
+      left: 104.4014%;
+      bottom: 60.5139%;
+      width: 8.47559px;
+      height: 10.09782px;
+    }
+    95.35822% {
+      left: 104.80594%;
+      bottom: 60.03674%;
+      width: 8.52219px;
+      height: 10.15333px;
+    }
+    100% {
+      left: 105.00328%;
+      bottom: 59.40674%;
+      width: 8.55467px;
+      height: 10.19203px;
+    }
+  }
+  @keyframes flicker_34 {
+    0%, 24.59893%, 25.94109%, 50.27475%, 51.3724%, 91.33628%, 92.42887%, 94.74506%, 95.98826%, 99.11292%, 100%, 100% {
+      opacity: 0;
+    }
+    24.93447%, 50.54916%, 91.60942%, 95.05586%, 99.33469% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_34 {
+    0%, 24.86736%, 25.00158%, 50.49428%, 50.60405%, 91.55479%, 91.66405%, 94.9937%, 95.11802%, 99.29033%, 99.37904%, 100% {
+      opacity: 0;
+    }
+    24.93447%, 50.54916%, 91.60942%, 95.05586%, 99.33469% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(34) {
+    animation: flight_34 2.85212s linear 0s infinite alternate, flicker_34 47.95606s linear 0s infinite normal;
+    transform: rotate(-15deg);
+  }
+  .firefly:nth-child(34) .highlight {
+    animation: flicker_highlight_34 47.95606s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_35 {
+    0% {
+      left: 49.65062%;
+      bottom: 65.95502%;
+      width: 6.88px;
+      height: 8.20784px;
+    }
+    2.81152% {
+      left: 49.18781%;
+      bottom: 66.00187%;
+      width: 6.91833px;
+      height: 8.25357px;
+    }
+    6.2008% {
+      left: 48.96771%;
+      bottom: 66.24516%;
+      width: 6.97466px;
+      height: 8.32077px;
+    }
+    9.59009% {
+      left: 49.26335%;
+      bottom: 66.64943%;
+      width: 7.02504px;
+      height: 8.38087px;
+    }
+    25.43338% {
+      left: 52.11765%;
+      bottom: 68.64135%;
+      width: 7.18156px;
+      height: 8.5676px;
+    }
+    28.82266% {
+      left: 52.62993%;
+      bottom: 69.34811%;
+      width: 7.19387px;
+      height: 8.58229px;
+    }
+    32.21194% {
+      left: 52.789%;
+      bottom: 70.13953%;
+      width: 7.17215px;
+      height: 8.55638px;
+    }
+    57.8872% {
+      left: 51.78296%;
+      bottom: 74.83059%;
+      width: 6.8727px;
+      height: 8.19914px;
+    }
+    61.27648% {
+      left: 51.52351%;
+      bottom: 75.55221%;
+      width: 6.84717px;
+      height: 8.16867px;
+    }
+    64.66576% {
+      left: 51.15322%;
+      bottom: 76.32374%;
+      width: 6.83863px;
+      height: 8.15849px;
+    }
+    64.77902% {
+      left: 51.13829%;
+      bottom: 76.3493%;
+      width: 6.83889px;
+      height: 8.1588px;
+    }
+    68.1683% {
+      left: 50.88942%;
+      bottom: 77.12637%;
+      width: 6.86415px;
+      height: 8.18893px;
+    }
+    71.55758% {
+      left: 50.90066%;
+      bottom: 77.80359%;
+      width: 6.90547px;
+      height: 8.23822px;
+    }
+    100% {
+      left: 52.9051%;
+      bottom: 82.00456%;
+      width: 7.31917px;
+      height: 8.73178px;
+    }
+  }
+  @keyframes flicker_35 {
+    0%, 21.88661%, 22.8442%, 30.20275%, 30.94736%, 46.08452%, 47.3587%, 90.03407%, 90.82197%, 98.91658%, 100%, 100% {
+      opacity: 0;
+    }
+    22.12601%, 30.3889%, 46.40306%, 90.23105%, 99.18743% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_35 {
+    0%, 22.07813%, 22.17389%, 30.35167%, 30.42613%, 46.33935%, 46.46677%, 90.19165%, 90.27044%, 99.13326%, 99.24161%, 100% {
+      opacity: 0;
+    }
+    22.12601%, 30.3889%, 46.40306%, 90.23105%, 99.18743% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(35) {
+    animation: flight_35 4.42572s linear 0s infinite alternate, flicker_35 60.01632s linear 0s infinite normal;
+    transform: rotate(29deg);
+  }
+  .firefly:nth-child(35) .highlight {
+    animation: flicker_highlight_35 60.01632s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_36 {
+    0% {
+      left: 33.72915%;
+      bottom: 35.33158%;
+      width: 8.392px;
+      height: 9.44268px;
+    }
+    5.65216% {
+      left: 35.74404%;
+      bottom: 37.21142%;
+      width: 8.47923px;
+      height: 9.54083px;
+    }
+    7.32824% {
+      left: 36.48554%;
+      bottom: 37.74699%;
+      width: 8.48692px;
+      height: 9.54949px;
+    }
+    9.00432% {
+      left: 37.28574%;
+      bottom: 38.18644%;
+      width: 8.47369px;
+      height: 9.53459px;
+    }
+    38.71852% {
+      left: 50.50548%;
+      bottom: 43.47782%;
+      width: 7.93792px;
+      height: 8.93174px;
+    }
+    40.3946% {
+      left: 51.20567%;
+      bottom: 43.80998%;
+      width: 7.90635px;
+      height: 8.89623px;
+    }
+    42.07068% {
+      left: 51.87258%;
+      bottom: 44.17885%;
+      width: 7.87359px;
+      height: 8.85936px;
+    }
+    82.85146% {
+      left: 66.7864%;
+      bottom: 53.72672%;
+      width: 7.04975px;
+      height: 7.93238px;
+    }
+    84.52754% {
+      left: 67.11374%;
+      bottom: 54.42%;
+      width: 7.02193px;
+      height: 7.90107px;
+    }
+    86.20362% {
+      left: 66.98617%;
+      bottom: 55.27435%;
+      width: 7.01152px;
+      height: 7.88936px;
+    }
+    92.15627% {
+      left: 65.43827%;
+      bottom: 58.03595%;
+      width: 7.02908px;
+      height: 7.90912px;
+    }
+    93.83235% {
+      left: 65.19536%;
+      bottom: 58.79222%;
+      width: 7.05521px;
+      height: 7.93852px;
+    }
+    95.50843% {
+      left: 65.2287%;
+      bottom: 59.37412%;
+      width: 7.10116px;
+      height: 7.99023px;
+    }
+    100% {
+      left: 65.91908%;
+      bottom: 60.26639%;
+      width: 7.24583px;
+      height: 8.15301px;
+    }
+  }
+  @keyframes flicker_36 {
+    0%, 5.61515%, 6.31117%, 7.00719%, 39.94315%, 41.07023%, 55.68348%, 56.51824%, 71.80303%, 72.76148%, 98.60155%, 100%, 100% {
+      opacity: 0;
+    }
+    5.96316%, 6.65918%, 40.22492%, 55.89217%, 72.04264%, 98.95116% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_36 {
+    0%, 5.89356%, 6.03276%, 40.16857%, 40.28127%, 55.85043%, 55.93391%, 71.99472%, 72.09057%, 98.88124%, 99.02108%, 100% {
+      opacity: 0;
+    }
+    5.96316%, 40.22492%, 55.89217%, 72.04264%, 98.95116% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(36) {
+    animation: flight_36 8.94946s linear 0s infinite alternate, flicker_36 51.25238s linear 0s infinite normal;
+    transform: rotate(-26deg);
+  }
+  .firefly:nth-child(36) .highlight {
+    animation: flicker_highlight_36 51.25238s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_37 {
+    0% {
+      left: 64.5301%;
+      bottom: 31.57621%;
+      width: 2.104px;
+      height: 2.48272px;
+    }
+    22.59977% {
+      left: 65.88138%;
+      bottom: 33.82456%;
+      width: 2.67074px;
+      height: 3.15147px;
+    }
+    24.80518% {
+      left: 65.82286%;
+      bottom: 34.34669%;
+      width: 2.70962px;
+      height: 3.19736px;
+    }
+    27.01058% {
+      left: 65.47572%;
+      bottom: 34.96206%;
+      width: 2.68867px;
+      height: 3.17263px;
+    }
+    33.36689% {
+      left: 64.46031%;
+      bottom: 36.10412%;
+      width: 2.5599px;
+      height: 3.02068px;
+    }
+    35.5723% {
+      left: 64.15939%;
+      bottom: 36.38628%;
+      width: 2.508px;
+      height: 2.95944px;
+    }
+    37.7777% {
+      left: 63.92307%;
+      bottom: 36.54165%;
+      width: 2.45117px;
+      height: 2.89237px;
+    }
+    43.60012% {
+      left: 63.48978%;
+      bottom: 36.61672%;
+      width: 2.29522px;
+      height: 2.70836px;
+    }
+    45.80552% {
+      left: 63.65372%;
+      bottom: 36.83778%;
+      width: 2.23972px;
+      height: 2.64287px;
+    }
+    48.01093% {
+      left: 64.23091%;
+      bottom: 37.22214%;
+      width: 2.22561px;
+      height: 2.62622px;
+    }
+    95.3371% {
+      left: 77.47033%;
+      bottom: 44.57491%;
+      width: 2.57384px;
+      height: 3.03714px;
+    }
+    97.5425% {
+      left: 77.903%;
+      bottom: 45.08722%;
+      width: 2.60025px;
+      height: 3.06829px;
+    }
+    99.74791% {
+      left: 78.02162%;
+      bottom: 45.68628%;
+      width: 2.63305px;
+      height: 3.107px;
+    }
+    100% {
+      left: 78.00314%;
+      bottom: 45.75214%;
+      width: 2.63682px;
+      height: 3.11145px;
+    }
+  }
+  @keyframes flicker_37 {
+    0%, 41.84065%, 42.68836%, 66.65074%, 67.94791%, 70.63127%, 71.23844%, 71.8456%, 87.82297%, 89.19244%, 98.69556%, 100%, 100% {
+      opacity: 0;
+    }
+    42.05258%, 66.97503%, 70.93485%, 71.54202%, 88.16533%, 99.02167% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_37 {
+    0%, 42.01019%, 42.09496%, 66.91017%, 67.03989%, 70.87414%, 70.99557%, 88.09686%, 88.23381%, 98.95645%, 99.0869%, 100% {
+      opacity: 0;
+    }
+    42.05258%, 66.97503%, 70.93485%, 88.16533%, 99.02167% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(37) {
+    animation: flight_37 6.80147s linear 0s infinite alternate, flicker_37 47.66996s linear 0s infinite normal;
+    transform: rotate(-29deg);
+  }
+  .firefly:nth-child(37) .highlight {
+    animation: flicker_highlight_37 47.66996s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_38 {
+    0% {
+      left: 81.78199%;
+      bottom: 32.3668%;
+      width: 4.464px;
+      height: 5.03718px;
+    }
+    7.15918% {
+      left: 82.68197%;
+      bottom: 34.27052%;
+      width: 4.41692px;
+      height: 4.98405px;
+    }
+    9.78176% {
+      left: 82.90319%;
+      bottom: 35.01468%;
+      width: 4.42718px;
+      height: 4.99563px;
+    }
+    12.40434% {
+      left: 82.87901%;
+      bottom: 35.51118%;
+      width: 4.47163px;
+      height: 5.04579px;
+    }
+    26.60003% {
+      left: 81.84594%;
+      bottom: 36.44952%;
+      width: 4.76618px;
+      height: 5.37816px;
+    }
+    29.22261% {
+      left: 82.05405%;
+      bottom: 36.54733%;
+      width: 4.82458px;
+      height: 5.44406px;
+    }
+    31.84519% {
+      left: 82.73861%;
+      bottom: 36.48792%;
+      width: 4.86136px;
+      height: 5.48556px;
+    }
+    46.56044% {
+      left: 87.20648%;
+      bottom: 35.65663%;
+      width: 4.92142px;
+      height: 5.55333px;
+    }
+    49.18302% {
+      left: 87.97898%;
+      bottom: 35.89564%;
+      width: 4.93217px;
+      height: 5.56546px;
+    }
+    51.80561% {
+      left: 87.73555%;
+      bottom: 36.66769%;
+      width: 4.92967px;
+      height: 5.56264px;
+    }
+    54.32102% {
+      left: 87.20046%;
+      bottom: 37.23828%;
+      width: 4.923px;
+      height: 5.55511px;
+    }
+    56.9436% {
+      left: 86.9682%;
+      bottom: 37.98628%;
+      width: 4.90399px;
+      height: 5.53366px;
+    }
+    59.56618% {
+      left: 87.63994%;
+      bottom: 38.23561%;
+      width: 4.88125px;
+      height: 5.508px;
+    }
+    100% {
+      left: 99.21878%;
+      bottom: 36.51018%;
+      width: 4.68168px;
+      height: 5.2828px;
+    }
+  }
+  @keyframes flicker_38 {
+    0%, 6.19628%, 7.43727%, 12.67058%, 13.94705%, 47.7241%, 48.61712%, 50.07512%, 51.47355%, 98.77348%, 100%, 100% {
+      opacity: 0;
+    }
+    6.50653%, 12.9897%, 47.94735%, 50.42473%, 99.08011% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_38 {
+    0%, 6.44448%, 6.56858%, 12.92587%, 13.05352%, 47.9027%, 47.992%, 50.35481%, 50.49465%, 99.01879%, 99.14144%, 100% {
+      opacity: 0;
+    }
+    6.50653%, 12.9897%, 47.94735%, 50.42473%, 99.08011% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(38) {
+    animation: flight_38 5.71956s linear 0s infinite alternate, flicker_38 50.2747s linear 0s infinite normal;
+    transform: rotate(15deg);
+  }
+  .firefly:nth-child(38) .highlight {
+    animation: flicker_highlight_38 50.2747s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_39 {
+    0% {
+      left: 52.84213%;
+      bottom: 97.57933%;
+      width: 4.392px;
+      height: 4.96032px;
+    }
+    33.13698% {
+      left: 55.0606%;
+      bottom: 92.03331%;
+      width: 4.42955px;
+      height: 5.00273px;
+    }
+    37.62035% {
+      left: 55.65458%;
+      bottom: 91.50863%;
+      width: 4.42316px;
+      height: 4.99551px;
+    }
+    42.10372% {
+      left: 56.36854%;
+      bottom: 91.64826%;
+      width: 4.40226px;
+      height: 4.97192px;
+    }
+    43.76295% {
+      left: 56.55469%;
+      bottom: 91.83216%;
+      width: 4.39428px;
+      height: 4.9629px;
+    }
+    48.24632% {
+      left: 56.96174%;
+      bottom: 92.48532%;
+      width: 4.38649px;
+      height: 4.9541px;
+    }
+    52.7297% {
+      left: 57.22883%;
+      bottom: 93.23613%;
+      width: 4.39381px;
+      height: 4.96236px;
+    }
+    59.47408% {
+      left: 57.41715%;
+      bottom: 94.44528%;
+      width: 4.42514px;
+      height: 4.99775px;
+    }
+    63.95745% {
+      left: 57.69551%;
+      bottom: 95.16873%;
+      width: 4.41915px;
+      height: 4.99098px;
+    }
+    68.44083% {
+      left: 58.08061%;
+      bottom: 95.51191%;
+      width: 4.37848px;
+      height: 4.94505px;
+    }
+    84.36369% {
+      left: 59.28817%;
+      bottom: 95.38389%;
+      width: 4.18992px;
+      height: 4.7321px;
+    }
+    88.84706% {
+      left: 59.231%;
+      bottom: 95.25964%;
+      width: 4.12998px;
+      height: 4.6644px;
+    }
+    93.33043% {
+      left: 58.48171%;
+      bottom: 95.09007%;
+      width: 4.11539px;
+      height: 4.64792px;
+    }
+    100% {
+      left: 57.38491%;
+      bottom: 94.9246%;
+      width: 4.13775px;
+      height: 4.67318px;
+    }
+  }
+  @keyframes flicker_39 {
+    0%, 35.75552%, 37.74297%, 41.19865%, 43.82199%, 81.00058%, 84.49891%, 87.69147%, 90.9914%, 97.36224%, 100%, 100% {
+      opacity: 0;
+    }
+    36.25238%, 41.85449%, 81.87517%, 88.51645%, 98.02168% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_39 {
+    0%, 36.15301%, 36.35176%, 41.72332%, 41.98565%, 81.70025%, 82.05008%, 88.35146%, 88.68145%, 97.88979%, 98.15357%, 100% {
+      opacity: 0;
+    }
+    36.25238%, 41.85449%, 81.87517%, 88.51645%, 98.02168% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(39) {
+    animation: flight_39 3.3457s linear 0s infinite alternate, flicker_39 20.42866s linear 0s infinite normal;
+    transform: rotate(25deg);
+  }
+  .firefly:nth-child(39) .highlight {
+    animation: flicker_highlight_39 20.42866s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_40 {
+    0% {
+      left: 70.39958%;
+      bottom: 12.83968%;
+      width: 5.504px;
+      height: 6.43968px;
+    }
+    34.64197% {
+      left: 49.85653%;
+      bottom: 2.70265%;
+      width: 5.86673px;
+      height: 6.86408px;
+    }
+    35.87927% {
+      left: 49.23256%;
+      bottom: 2.14091%;
+      width: 5.867px;
+      height: 6.86439px;
+    }
+    37.11657% {
+      left: 48.8375%;
+      bottom: 1.45279%;
+      width: 5.85329px;
+      height: 6.84835px;
+    }
+    44.47107% {
+      left: 47.92366%;
+      bottom: -2.84293%;
+      width: 5.7078px;
+      height: 6.67813px;
+    }
+    45.70837% {
+      left: 47.75566%;
+      bottom: -3.5286%;
+      width: 5.68294px;
+      height: 6.64904px;
+    }
+    46.94567% {
+      left: 47.5693%;
+      bottom: -4.19949%;
+      width: 5.6571px;
+      height: 6.61881px;
+    }
+    64.16455% {
+      left: 44.71556%;
+      bottom: 6.60057%;
+      width: 5.27767px;
+      height: 6.17487px;
+    }
+    65.40185% {
+      left: 44.60599%;
+      bottom: 5.80938%;
+      width: 5.27004px;
+      height: 6.16595px;
+    }
+    66.63915% {
+      left: 44.61362%;
+      bottom: 4.98887%;
+      width: 5.28523px;
+      height: 6.18372px;
+    }
+    77.28805% {
+      left: 45.56671%;
+      bottom: -1.49465%;
+      width: 5.5717px;
+      height: 6.51889px;
+    }
+    78.52535% {
+      left: 45.50789%;
+      bottom: -2.30146%;
+      width: 5.59629px;
+      height: 6.54766px;
+    }
+    79.76265% {
+      left: 45.27811%;
+      bottom: -3.10598%;
+      width: 5.61052px;
+      height: 6.56431px;
+    }
+    100% {
+      left: 39.01635%;
+      bottom: 9.20752%;
+      width: 5.67317px;
+      height: 6.6376px;
+    }
+  }
+  @keyframes flicker_40 {
+    0%, 45.61875%, 47.95268%, 71.01058%, 73.66137%, 80.5531%, 84.26957%, 93.12582%, 95.76641%, 97.5976%, 100%, 100% {
+      opacity: 0;
+    }
+    46.20223%, 71.67328%, 81.48222%, 93.78597%, 98.1982% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_40 {
+    0%, 46.08553%, 46.31893%, 71.54074%, 71.80582%, 81.29639%, 81.66804%, 93.65394%, 93.918%, 98.07808%, 98.31832%, 100% {
+      opacity: 0;
+    }
+    46.20223%, 71.67328%, 81.48222%, 93.78597%, 98.1982% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(40) {
+    animation: flight_40 12.12317s linear 0s infinite alternate, flicker_40 23.77824s linear 0s infinite normal;
+    transform: rotate(17deg);
+  }
+  .firefly:nth-child(40) .highlight {
+    animation: flicker_highlight_40 23.77824s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_41 {
+    0% {
+      left: 45.71665%;
+      bottom: 81.55054%;
+      width: 4.216px;
+      height: 5.01704px;
+    }
+    4.85377% {
+      left: 47.99099%;
+      bottom: 81.10961%;
+      width: 4.11045px;
+      height: 4.89144px;
+    }
+    6.27904% {
+      left: 48.70668%;
+      bottom: 80.79925%;
+      width: 4.10534px;
+      height: 4.88535px;
+    }
+    7.70432% {
+      left: 48.79676%;
+      bottom: 80.45044%;
+      width: 4.15563px;
+      height: 4.9452px;
+    }
+    12.12471% {
+      left: 47.98421%;
+      bottom: 79.83101%;
+      width: 4.3194px;
+      height: 5.14009px;
+    }
+    13.54998% {
+      left: 47.87209%;
+      bottom: 79.67029%;
+      width: 4.37614px;
+      height: 5.2076px;
+    }
+    14.97525% {
+      left: 47.91933%;
+      bottom: 79.55785%;
+      width: 4.43431px;
+      height: 5.27683px;
+    }
+    33.79362% {
+      left: 50.62394%;
+      bottom: 78.69796%;
+      width: 5.18822px;
+      height: 6.17398px;
+    }
+    35.21889% {
+      left: 50.82918%;
+      bottom: 78.7935%;
+      width: 5.2463px;
+      height: 6.24309px;
+    }
+    36.64416% {
+      left: 51.02015%;
+      bottom: 79.05262%;
+      width: 5.30297px;
+      height: 6.31054px;
+    }
+    38.09938% {
+      left: 51.19344%;
+      bottom: 79.46829%;
+      width: 5.35721px;
+      height: 6.37508px;
+    }
+    39.52465% {
+      left: 51.01393%;
+      bottom: 80.07107%;
+      width: 5.39977px;
+      height: 6.42573px;
+    }
+    40.94992% {
+      left: 50.40648%;
+      bottom: 80.62918%;
+      width: 5.40249px;
+      height: 6.42897px;
+    }
+    100% {
+      left: 23.9313%;
+      bottom: 93.81749%;
+      width: 4.42665px;
+      height: 5.26771px;
+    }
+  }
+  @keyframes flicker_41 {
+    0%, 14.5815%, 18.34007%, 28.10229%, 30.80782%, 50.45343%, 54.02993%, 87.46832%, 90.28014%, 95.94126%, 97.97063%, 100%, 100% {
+      opacity: 0;
+    }
+    15.52114%, 28.77867%, 51.34755%, 88.17128%, 96.95595%, 98.98532% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_41 {
+    0%, 15.33321%, 15.70907%, 28.64339%, 28.91395%, 51.16873%, 51.52638%, 88.03068%, 88.31187%, 96.75301%, 97.15889%, 100% {
+      opacity: 0;
+    }
+    15.52114%, 28.77867%, 51.34755%, 88.17128%, 96.95595% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(41) {
+    animation: flight_41 10.5243s linear 0s infinite alternate, flicker_41 17.59946s linear 0s infinite normal;
+    transform: rotate(7deg);
+  }
+  .firefly:nth-child(41) .highlight {
+    animation: flicker_highlight_41 17.59946s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_42 {
+    0% {
+      left: 33.14422%;
+      bottom: 62.5415%;
+      width: 3.296px;
+      height: 3.78381px;
+    }
+    18.1942% {
+      left: 28.92897%;
+      bottom: 58.10228%;
+      width: 3.28116px;
+      height: 3.76677px;
+    }
+    20.43598% {
+      left: 28.28371%;
+      bottom: 57.73583%;
+      width: 3.29452px;
+      height: 3.78211px;
+    }
+    22.67775% {
+      left: 27.60161%;
+      bottom: 57.63491%;
+      width: 3.32291px;
+      height: 3.8147px;
+    }
+    57.0903% {
+      left: 17.93161%;
+      bottom: 59.846%;
+      width: 3.89262px;
+      height: 4.46873px;
+    }
+    59.33208% {
+      left: 17.16219%;
+      bottom: 59.94611%;
+      width: 3.90347px;
+      height: 4.48119px;
+    }
+    61.57386% {
+      left: 17.05489%;
+      bottom: 59.82624%;
+      width: 3.84579px;
+      height: 4.41497px;
+    }
+    64.1796% {
+      left: 17.33853%;
+      bottom: 59.64722%;
+      width: 3.77861px;
+      height: 4.33784px;
+    }
+    66.42138% {
+      left: 17.61757%;
+      bottom: 59.36741%;
+      width: 3.7243px;
+      height: 4.2755px;
+    }
+    68.66315% {
+      left: 17.46396%;
+      bottom: 59.27005%;
+      width: 3.7833px;
+      height: 4.34323px;
+    }
+    95.41146% {
+      left: 15.0321%;
+      bottom: 59.55804%;
+      width: 4.49108px;
+      height: 5.15576px;
+    }
+    97.65324% {
+      left: 15.08106%;
+      bottom: 59.91497%;
+      width: 4.54461px;
+      height: 5.21721px;
+    }
+    99.89502% {
+      left: 15.50306%;
+      bottom: 60.56895%;
+      width: 4.55493px;
+      height: 5.22907px;
+    }
+    100% {
+      left: 15.52601%;
+      bottom: 60.59653%;
+      width: 4.55401px;
+      height: 5.22801px;
+    }
+  }
+  @keyframes flicker_42 {
+    0%, 9.06046%, 11.40916%, 58.89906%, 61.78348%, 63.846%, 64.86846%, 65.89091%, 94.40966%, 96.5899%, 97.28335%, 98.64167%, 100%, 100% {
+      opacity: 0;
+    }
+    9.64763%, 59.62017%, 64.35723%, 65.37968%, 94.95472%, 97.96251%, 99.32084% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_42 {
+    0%, 9.5302%, 9.76507%, 59.47595%, 59.76439%, 64.25498%, 64.45948%, 94.84571%, 95.06373%, 97.82668%, 98.09834%, 100% {
+      opacity: 0;
+    }
+    9.64763%, 59.62017%, 64.35723%, 94.95472%, 97.96251% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(42) {
+    animation: flight_42 6.69112s linear 0s infinite alternate, flicker_42 24.57252s linear 0s infinite normal;
+    transform: rotate(21deg);
+  }
+  .firefly:nth-child(42) .highlight {
+    animation: flicker_highlight_42 24.57252s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_43 {
+    0% {
+      left: 24.91041%;
+      bottom: 29.54782%;
+      width: 7.424px;
+      height: 8.40397px;
+    }
+    14.77433% {
+      left: 20.41322%;
+      bottom: 33.77227%;
+      width: 7.4809px;
+      height: 8.46838px;
+    }
+    16.90261% {
+      left: 20.07822%;
+      bottom: 34.55167%;
+      width: 7.49937px;
+      height: 8.48929px;
+    }
+    19.03089% {
+      left: 20.2291%;
+      bottom: 35.32267%;
+      width: 7.52541px;
+      height: 8.51876px;
+    }
+    22.96214% {
+      left: 21.14753%;
+      bottom: 36.42895%;
+      width: 7.57396px;
+      height: 8.57372px;
+    }
+    25.09042% {
+      left: 21.34322%;
+      bottom: 37.26981%;
+      width: 7.58766px;
+      height: 8.58923px;
+    }
+    27.21869% {
+      left: 20.66559%;
+      bottom: 37.61479%;
+      width: 7.55841px;
+      height: 8.55612px;
+    }
+    83.45232% {
+      left: 2.59004%;
+      bottom: 36.09705%;
+      width: 6.68696px;
+      height: 7.56964px;
+    }
+    85.5806% {
+      left: 2.30501%;
+      bottom: 36.16468%;
+      width: 6.63326px;
+      height: 7.50886px;
+    }
+    87.70888% {
+      left: 2.8821%;
+      bottom: 36.3895%;
+      width: 6.58577px;
+      height: 7.4551px;
+    }
+    88.79971% {
+      left: 3.29694%;
+      bottom: 36.50039%;
+      width: 6.57356px;
+      height: 7.44127px;
+    }
+    90.92799% {
+      left: 3.83808%;
+      bottom: 36.86619%;
+      width: 6.52874px;
+      height: 7.39053px;
+    }
+    93.05627% {
+      left: 3.67539%;
+      bottom: 37.25254%;
+      width: 6.47725px;
+      height: 7.33225px;
+    }
+    100% {
+      left: 1.88156%;
+      bottom: 38.11262%;
+      width: 6.35409px;
+      height: 7.19283px;
+    }
+  }
+  @keyframes flicker_43 {
+    0%, 14.39453%, 17.44441%, 17.69027%, 19.30549%, 20.92071%, 26.5505%, 29.28481%, 59.51621%, 61.78893%, 97.90313%, 100%, 100% {
+      opacity: 0;
+    }
+    15.157%, 18.49788%, 20.1131%, 27.23408%, 60.08439%, 98.42735% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_43 {
+    0%, 15.0045%, 15.30949%, 18.33635%, 18.6594%, 27.09736%, 27.37079%, 59.97075%, 60.19803%, 98.3225%, 98.53219%, 100% {
+      opacity: 0;
+    }
+    15.157%, 18.49788%, 27.23408%, 60.08439%, 98.42735% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(43) {
+    animation: flight_43 7.04795s linear 0s infinite alternate, flicker_43 22.06376s linear 0s infinite normal;
+    transform: rotate(-14deg);
+  }
+  .firefly:nth-child(43) .highlight {
+    animation: flicker_highlight_43 22.06376s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_44 {
+    0% {
+      left: 28.57395%;
+      bottom: 58.70433%;
+      width: 2.256px;
+      height: 2.42655px;
+    }
+    10.20692% {
+      left: 30.87432%;
+      bottom: 59.22193%;
+      width: 2.26816px;
+      height: 2.43964px;
+    }
+    13.29409% {
+      left: 31.5715%;
+      bottom: 59.27071%;
+      width: 2.27835px;
+      height: 2.45059px;
+    }
+    16.38125% {
+      left: 32.24538%;
+      bottom: 59.20919%;
+      width: 2.29471px;
+      height: 2.46819px;
+    }
+    48.69803% {
+      left: 38.89449%;
+      bottom: 57.45235%;
+      width: 2.52249px;
+      height: 2.71319px;
+    }
+    51.78519% {
+      left: 39.49589%;
+      bottom: 57.19135%;
+      width: 2.54583px;
+      height: 2.7383px;
+    }
+    54.87235% {
+      left: 40.04602%;
+      bottom: 56.8446%;
+      width: 2.5703px;
+      height: 2.76461px;
+    }
+    70.19375% {
+      left: 42.48868%;
+      bottom: 54.72563%;
+      width: 2.69496px;
+      height: 2.8987px;
+    }
+    73.28091% {
+      left: 42.94809%;
+      bottom: 54.1556%;
+      width: 2.69125px;
+      height: 2.8947px;
+    }
+    76.36808% {
+      left: 43.11373%;
+      bottom: 53.6781%;
+      width: 2.64695px;
+      height: 2.84706px;
+    }
+    78.28649% {
+      left: 43.06334%;
+      bottom: 53.519%;
+      width: 2.61223px;
+      height: 2.80971px;
+    }
+    81.37365% {
+      left: 42.91279%;
+      bottom: 53.14069%;
+      width: 2.56243px;
+      height: 2.75615px;
+    }
+    84.46081% {
+      left: 42.69956%;
+      bottom: 52.65765%;
+      width: 2.52124px;
+      height: 2.71185px;
+    }
+    100% {
+      left: 41.37627%;
+      bottom: 49.8364%;
+      width: 2.36355px;
+      height: 2.54224px;
+    }
+  }
+  @keyframes flicker_44 {
+    0%, 7.91891%, 10.0108%, 44.90504%, 47.14935%, 69.20889%, 70.68774%, 75.69054%, 77.27194%, 98.33078%, 100%, 100% {
+      opacity: 0;
+    }
+    8.44188%, 45.46612%, 69.5786%, 76.08589%, 98.74808% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_44 {
+    0%, 8.33729%, 8.54647%, 45.35391%, 45.57834%, 69.50466%, 69.65254%, 76.00682%, 76.16496%, 98.66462%, 98.83154%, 100% {
+      opacity: 0;
+    }
+    8.44188%, 45.46612%, 69.5786%, 76.08589%, 98.74808% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(44) {
+    animation: flight_44 4.85883s linear 0s infinite alternate, flicker_44 30.56991s linear 0s infinite normal;
+    transform: rotate(-27deg);
+  }
+  .firefly:nth-child(44) .highlight {
+    animation: flicker_highlight_44 30.56991s linear 0s infinite normal;
+  }
+  
+  @keyframes flight_45 {
+    0% {
+      left: 51.24225%;
+      bottom: 76.08729%;
+      width: 6.096px;
+      height: 6.33984px;
+    }
+    3.8266% {
+      left: 51.39708%;
+      bottom: 75.81659%;
+      width: 6.18453px;
+      height: 6.43192px;
+    }
+    6.30141% {
+      left: 51.19498%;
+      bottom: 75.94794%;
+      width: 6.24255px;
+      height: 6.49225px;
+    }
+    8.77623% {
+      left: 50.60485%;
+      bottom: 76.55513%;
+      width: 6.23834px;
+      height: 6.48787px;
+    }
+    40.52234% {
+      left: 44.63556%;
+      bottom: 83.14467%;
+      width: 5.83776px;
+      height: 6.07127px;
+    }
+    42.99715% {
+      left: 43.91618%;
+      bottom: 83.5358%;
+      width: 5.82806px;
+      height: 6.06118px;
+    }
+    45.47197% {
+      left: 43.14558%;
+      bottom: 83.5974%;
+      width: 5.85265px;
+      height: 6.08676px;
+    }
+    77.33147% {
+      left: 35.57598%;
+      bottom: 81.15569%;
+      width: 6.37929px;
+      height: 6.63446px;
+    }
+    79.80629% {
+      left: 34.85134%;
+      bottom: 80.80688%;
+      width: 6.3999px;
+      height: 6.65589px;
+    }
+    82.28111% {
+      left: 34.13257%;
+      bottom: 80.35067%;
+      width: 6.39241px;
+      height: 6.6481px;
+    }
+    91.01439% {
+      left: 32.05456%;
+      bottom: 78.70867%;
+      width: 6.28864px;
+      height: 6.54019px;
+    }
+    93.48921% {
+      left: 31.60063%;
+      bottom: 78.49633%;
+      width: 6.24073px;
+      height: 6.49036px;
+    }
+    95.96403% {
+      left: 31.46328%;
+      bottom: 78.67354%;
+      width: 6.18458px;
+      height: 6.43196px;
+    }
+    100% {
+      left: 31.67885%;
+      bottom: 79.3675%;
+      width: 6.10476px;
+      height: 6.34895px;
+    }
+  }
+  @keyframes flicker_45 {
+    0%, 22.54877%, 23.65489%, 26.75946%, 27.84676%, 28.96669%, 30.27066%, 74.71306%, 75.6675%, 98.76672%, 100%, 100% {
+      opacity: 0;
+    }
+    22.8253%, 27.03129%, 29.29269%, 74.95167%, 99.07504% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker_highlight_45 {
+    0%, 22.76999%, 22.8806%, 26.97692%, 27.08565%, 29.22749%, 29.35788%, 74.90395%, 74.99939%, 99.01338%, 99.1367%, 100% {
+      opacity: 0;
+    }
+    22.8253%, 27.03129%, 29.29269%, 74.95167%, 99.07504% {
+      opacity: 0.8;
+    }
+  }
+  .firefly:nth-child(45) {
+    animation: flight_45 6.06105s linear 0s infinite alternate, flicker_45 48.76314s linear 0s infinite normal;
+    transform: rotate(15deg);
+  }
+  .firefly:nth-child(45) .highlight {
+    animation: flicker_highlight_45 48.76314s linear 0s infinite normal;
+  }
+  

@@ -1,0 +1,197 @@
+.padding-lr {
+	padding: 0 60px;
+}
+
+.margin-t {
+	margin-top: 400px;
+}
+.margin-b {
+	margin-bottom: 400px;
+}
+
+.heading-style-2 {
+	max-width: 650px;
+	font-size: 36px;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 44px;
+
+	b {
+		font-weight: 800;
+	}
+}
+#waterBottle {
+	position: absolute;
+	left: 0%;
+	right: 0;
+	margin: auto;
+	bottom: -1%;
+	width: 10vw;
+	z-index: 1;
+	// top: 275px !important;
+
+	.animate-me {
+		position: absolute;
+		width: 80%;
+		left: 11%;
+		top: 0%;
+	}
+	.animate-me.fade {
+		animation: opacity 10s linear, rotation 20s infinite linear;
+	}
+	&.bottel-clip {
+		position: fixed;
+		bottom: 10%;
+	}
+}
+
+#waterVideo {
+	
+	display: block;
+	margin: 0 auto;
+	display: block;
+	margin: 0 auto;
+	width: 10vw;
+	height: 47vh;
+	object-fit: cover;
+	border-radius: 180px;
+}
+#waterVideo.clip-add
+{
+	-webkit-clip-path: url(#svgTextPath);
+	clip-path: url(#svgTextPath);
+	// transition: all 1s;
+	border-radius: 0px;
+	width: 100%;
+	height: 60vh;
+}
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.distalarySection {
+	opacity: 0;
+	padding: 300px 0 150px;
+	.d-flex {
+		gap: 80px;
+	}
+	.col-34 {
+		min-width: 60%;
+	}
+	.col-14 {
+		width: 40%;
+		.content {
+			margin-bottom: 60px;
+			margin-top: 60px;
+		}
+	}
+
+	.with-overlay-left,
+	.with-overlay-right {
+		position: relative;
+	}
+
+	img {
+		aspect-ratio: 4/3;
+	}
+
+	.with-overlay-left {
+		.overlay {
+			left: 0;
+		}
+	}
+
+	.with-overlay-right {
+		.overlay {
+			left: 0;
+		}
+	}
+
+	.overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: var(--c1);
+		transition: all ease-in 1s;
+	}
+
+	&.active {
+		.with-overlay-left,
+		.with-overlay-right {
+			.overlay {
+				width: 0;
+			}
+		}
+	}
+
+	h3 {
+		font-size: 22px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		margin-bottom: 0 !important;
+	}
+
+	.content {
+		gap: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 20px;
+		color: var(--c2);
+		max-width: 450px;
+		margin: 0 auto;
+		> span {
+			font-size: 30px;
+		}
+		p {
+			font-size: 22px;
+			line-height: 1.6;
+			font-weight: 300;
+			span {
+				display: block;
+			}
+		}
+	}
+}
+
+#soundButton {
+    position: fixed;
+    bottom: 20px;
+    left: 25px;
+    border: none;
+    margin: 0;
+    padding: 0;
+	z-index: 1000;
+	svg {
+		stroke: var(--c2);
+		fill: var(--c2);
+		width: 35px;
+		height: 35px;
+		display: none;
+	}
+
+	&.mute{
+		#mute{
+			display: block;
+		}
+	}
+	&:not(.mute){
+		#unmute{
+			display: block;
+		}
+	}
+
+}
+
+
+@media (min-width: 1500px) {
+	.pin-spacer {
+		top: 83.2% !important;
+	}
+}

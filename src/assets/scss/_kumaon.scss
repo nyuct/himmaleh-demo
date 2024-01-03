@@ -1,0 +1,377 @@
+.kumaon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+  gap: 40px;
+  padding: 0 60px;
+  .col-34 {
+    width: 60%;
+  }
+  .col-14 {
+    width: 40%;
+    text-align: "-webkit-left";
+  }
+
+  .content {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    h2 {
+      font-weight: 400;
+      font-size: 40px;
+    }
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+#KumaonBottle {
+  position: relative;
+  max-width: 480px;
+  margin-left: auto;
+  video {
+    position: absolute;
+    top: 17%;
+    left: 9px;
+    width: 100%;
+    z-index: 1;
+  }
+  img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+}
+
+.page-kumaon {
+  .main-nav ul a {
+    color: #ffffff;
+  }
+  .banner-sec {
+    background-image: url("../img/sneak/KI.jpg");
+    min-height: calc(100vh);
+    padding-top: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #soundButton {
+    display: none;
+  }
+  .animation-section {
+    position: relative;
+    height: 7000px;
+
+    #container3D canvas {
+      top: 0px;
+      opacity: 0;
+      transition: all 1s;
+      scale: 0.8;
+      position: fixed;
+      left: 0;
+    }
+    #container3D canvas.position-fixed {
+      opacity: 1;
+    }
+    #container3D canvas.go-left {
+      position: fixed;
+      transition: all 1s;
+      opacity: 1;
+      left: 20%;
+      top: 0;
+    }
+    #container3D canvas.d-fixed {
+      position: absolute;
+      transition: all 0s;
+      opacity: 1;
+      left: 20%;
+      top: 100%;
+    }
+  }
+  .sticky {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  .scroll-image {
+    display: flex;
+    will-change: transform;
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    transform: translateX(80%);
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.1s !important;
+    gap: 1vw;
+  }
+}
+
+// .flipped
+$color_1: #fff;
+$background-color_1: transparent;
+
+.card-detail {
+  width: 25vw;
+  flex-grow: 1;
+
+  .front-card {
+    width: 90%;
+  }
+}
+
+.flip-box {
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  cursor: pointer;
+  &.flipped {
+    .flip-box-front {
+      -ms-transform: rotateY(-180deg);
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+
+      .inner {
+        left: 10%;
+      }
+    }
+    .flip-box-back {
+      -ms-transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+  }
+  .inner {
+    position: absolute;
+    left: 0;
+    padding: 24px;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    -ms-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    color: #fff;
+  }
+  .flip-box-front {
+    -ms-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+
+    .inner {
+      transform: translateZ(60px) scale(0.94);
+      -webkit-transform: translateZ(60px) scale(0.94);
+      -ms-transform: translateZ(60px) scale(0.94);
+      width: 15%;
+      padding: 0;
+      top: 2%;
+      left: 3%;
+
+      img {
+        position: absolute;
+        top: 30px;
+        width: 200px;
+        left: 22px;
+        padding: 0;
+      }
+    }
+  }
+  .flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -ms-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    .inner {
+      width: 90%;
+      color: #a80928;
+      font-size: 18px;
+      line-height: 24px;
+      padding: 35px;
+    }
+  }
+  .flip-box-header {
+    font-size: 34px;
+  }
+  .flip-box-img {
+    margin-top: 25px;
+  }
+  .flip-box-button {
+    background-color: $background-color_1;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: $color_1;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+  }
+}
+.margin-t-200 {
+  margin-top: 200px;
+}
+.reveal-type {
+  .p-style-2 {
+    margin-bottom: 3rem;
+  }
+  h3 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 40px;
+  }
+  .display-5 {
+    line-height: 16px !important;
+    .word {
+      vertical-align: super;
+    }
+  }
+  .heading-style-2 {
+    line-height: 1.5 !important;
+  }
+}
+.sistehood-emblem {
+  width: 200px;
+}
+#fireflySection {
+  .location {
+    max-width: 700px;
+    font-size: 36px;
+    text-align: left;
+    margin: 0 auto;
+    color: var(--c1);
+  }
+  svg {
+    fill: #fff !important;
+  }
+}
+.circle-bottle img {
+  margin: 100px auto;
+  animation: rotation 10s infinite linear;
+}
+// @media (min-width : 1500px) {
+//   .card-detail {
+//     width: 22vw;
+//     flex-grow: 1;
+//   }
+//   .flip-box .flip-box-front , .flip-box .flip-box-back {
+//     background-size: contain;
+//     height: 80vh;
+//   }
+//   .flip-box .flip-box-front .inner  {
+//     width: 4vw;
+//   }
+//   .page-kumaon .scroll-image {
+//     width: 100%;
+//   }
+// }
+
+@media (max-width: 768px) {
+  .page-kumaon .animation-section {
+    height: 3000px;
+    #container3D canvas {
+      opacity: 0;
+      transition: all 1s;
+      left: 0%;
+      width: 50vw;
+      position: fixed;
+
+      &.go-left {
+        display: none;
+      }
+    }
+  }
+  .sticky-dots-animation {
+    padding: 0 12px;
+  }
+  .page-kumaon .scroll-image {
+    width: 1000vw;
+    gap: 20px;
+    .card-detail {
+      max-width: 90vw;
+      width: 100%;
+    }
+    .flip-box-back,
+    .flip-box-front {
+      height: 580px;
+
+      .front-card {
+        width: 100%;
+      }
+    }
+  }
+  .reveal-type {
+    font-size: 24px;
+    width: 100%;
+  }
+  .dark-circle img {
+    min-height: 100% !important;
+  }
+}
+
+.sticky-dots-left {
+  position: absolute;
+  top: -200px;
+  width: 15%;
+  left: 0;
+  transform: translate(0px, 0px);
+}
+.sticky-dots-right {
+  position: absolute;
+  bottom: -200px;
+  width: 15%;
+  right: 0;
+  transform: translate(0px, 0px) rotate(90deg);
+}
+.flip-box-front::before {
+  content: "More";
+  position: absolute;
+  bottom: 3%;
+  right: 15%;
+  color: #ffffff;
+  font-size: 14px;
+}
+.flip-box-front::after {
+  content: url(../img/animate/flip-icon-07.svg);
+  position: absolute;
+  bottom: 2%;
+  right: 12%;
+  color: #fff;
+  font-size: 14px;
+  width: 55px;
+}
