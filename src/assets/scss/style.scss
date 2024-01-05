@@ -14,7 +14,18 @@
   --c5: #324045;
   --c6: #aed1d4;
 }
+::-moz-selection {
+  /* Code for Firefox */
+  color: #b7dcdf;
+  background: #283337;
+}
 
+::selection {
+  color: #b7dcdf;
+  background: #283337;
+  line-height: 2;
+  padding: 5px;
+}
 html,
 body {
   min-height: 100vh;

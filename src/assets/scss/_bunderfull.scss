@@ -1,5 +1,4 @@
-.page-bunderfull {
-
+.page-bandarfull {
   * {
     // flex: 1;
   }
@@ -43,7 +42,7 @@
   }
 }
 
-.page-bunderfull {
+.page-bandarfull {
   .main-nav ul a {
     color: #ffffff;
   }
@@ -68,25 +67,26 @@
     position: relative;
     height: 7000px;
 
-    #container3D canvas {
+    #container3D img {
+      width: 15%;
       top: 0px;
       opacity: 0;
       transition: all 1s;
       scale: 0.8;
       position: fixed;
-      left: 0;
+      left: 42%;
     }
-    #container3D canvas.position-fixed {
+    #container3D img.position-fixed {
       opacity: 1;
     }
-    #container3D canvas.go-left {
+    #container3D img.go-left {
       position: fixed;
       transition: all 1s;
       opacity: 1;
-      left: 20%;
+      left: 70%;
       top: 0;
     }
-    #container3D canvas.d-fixed {
+    #container3D img.d-fixed {
       position: absolute;
       transition: all 0s;
       opacity: 1;
@@ -242,7 +242,7 @@ $background-color_1: transparent;
 .margin-t-200 {
   margin-top: 200px;
 }
-#kumaonMain .reveal-type {
+.page-bandarfull .reveal-type {
   font-size: 24px;
   width: 685px;
   .p-style-2 {
@@ -294,15 +294,15 @@ $background-color_1: transparent;
 //   .flip-box .flip-box-front .inner  {
 //     width: 4vw;
 //   }
-//   .page-kumaon .scroll-image {
+//   .page-bandarfull .scroll-image {
 //     width: 100%;
 //   }
 // }
 
 @media (max-width: 768px) {
-  .page-kumaon .animation-section {
+  .page-bandarfull .animation-section {
     height: 3000px;
-    #container3D canvas {
+    #container3D img {
       opacity: 0;
       transition: all 1s;
       left: 0%;
@@ -317,7 +317,7 @@ $background-color_1: transparent;
   .sticky-dots-animation {
     padding: 0 12px;
   }
-  .page-kumaon .scroll-image {
+  .page-bandarfull .scroll-image {
     width: 1000vw;
     gap: 20px;
     .card-detail {
