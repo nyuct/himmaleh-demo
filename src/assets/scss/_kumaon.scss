@@ -248,6 +248,10 @@ $background-color_1: transparent;
 }
 .reveal-type {
   .p-style-2 {
+    width: 768px;
+    font-size: 22px;
+    line-height: 1.6;
+    font-weight: 300;
     margin-bottom: 3rem;
   }
   h3 {
@@ -338,6 +342,16 @@ $background-color_1: transparent;
   .reveal-type {
     font-size: 24px;
     width: 100%;
+
+    .p-style-2 {
+      width: 90%;
+      padding-inline: 12px;
+      font-size: 22px;
+    }
+  }
+  .section--3 {
+    padding: 12px;
+    margin-top: 20px !important;
   }
   .dark-circle img {
     min-height: 100% !important;
@@ -356,7 +370,7 @@ $background-color_1: transparent;
   bottom: -200px;
   width: 15%;
   right: 0;
-  transform: translate(0px, 0px) rotate(90deg);
+  transform: translate(0px, 0px);
 }
 .flip-box-front::before {
   content: "More";
@@ -374,4 +388,8 @@ $background-color_1: transparent;
   color: #fff;
   font-size: 14px;
   width: 55px;
+}
+.last-tagline {
+  max-width: 768px;
+  width: 100%;
 }

@@ -1,26 +1,37 @@
-.page-bandarfull {
-  * {
-    // flex: 1;
-  }
+$color_1: #fff;
+$background-color_1: transparent;
+
+.kumaon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+  gap: 40px;
+  padding: 0 60px;
+
   .col-34 {
     width: 60%;
   }
+
   .col-14 {
     width: 40%;
-    text-align: "-webkit-left";
+    text-align: left; // Use 'left' instead of "-webkit-left"
   }
 
   .content {
     display: flex;
     gap: 30px;
     flex-direction: column;
+
     h2 {
       font-weight: 400;
       font-size: 40px;
     }
-  }
-  p {
-    font-size: 18px;
+
+    p {
+      font-size: 18px;
+    }
   }
 }
 
@@ -28,6 +39,7 @@
   position: relative;
   max-width: 480px;
   margin-left: auto;
+
   video {
     position: absolute;
     top: 17%;
@@ -35,6 +47,7 @@
     width: 100%;
     z-index: 1;
   }
+
   img {
     position: relative;
     z-index: 2;
@@ -46,6 +59,7 @@
   .main-nav ul a {
     color: #ffffff;
   }
+
   .banner-sec {
     background-image: url("../img/sneak/bandarful.jpg");
     min-height: calc(100vh);
@@ -60,9 +74,11 @@
     flex-direction: column;
     justify-content: center;
   }
+
   #soundButton {
     display: none;
   }
+
   .animation-section {
     position: relative;
     height: 7000px;
@@ -75,9 +91,11 @@
       position: fixed;
       left: 0;
     }
+
     #container3D canvas.position-fixed {
       opacity: 1;
     }
+
     #container3D canvas.go-left {
       position: fixed;
       transition: all 1s;
@@ -85,6 +103,7 @@
       left: 20%;
       top: 0;
     }
+
     #container3D canvas.d-fixed {
       position: absolute;
       transition: all 0s;
@@ -93,6 +112,7 @@
       top: 100%;
     }
   }
+
   .sticky {
     display: flex;
     align-items: center;
@@ -101,6 +121,7 @@
     top: 0;
     height: 100vh;
   }
+
   .scroll-image {
     display: flex;
     will-change: transform;
@@ -115,10 +136,6 @@
   }
 }
 
-// .flipped
-$color_1: #fff;
-$background-color_1: transparent;
-
 .card-detail {
   width: 25vw;
   flex-grow: 1;
@@ -132,6 +149,8 @@ $background-color_1: transparent;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  cursor: pointer;
+
   &.flipped {
     .flip-box-front {
       -ms-transform: rotateY(-180deg);
@@ -142,12 +161,14 @@ $background-color_1: transparent;
         left: 10%;
       }
     }
+
     .flip-box-back {
       -ms-transform: rotateY(0deg);
       -webkit-transform: rotateY(0deg);
       transform: rotateY(0deg);
     }
   }
+
   .inner {
     position: absolute;
     left: 0;
@@ -162,6 +183,7 @@ $background-color_1: transparent;
     top: 50%;
     color: #fff;
   }
+
   .flip-box-front {
     -ms-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -194,6 +216,7 @@ $background-color_1: transparent;
       }
     }
   }
+
   .flip-box-back {
     position: absolute;
     top: 0;
@@ -219,140 +242,106 @@ $background-color_1: transparent;
       padding: 35px;
     }
   }
+
   .flip-box-header {
     font-size: 34px;
   }
+
   .flip-box-img {
     margin-top: 25px;
   }
-  .flip-box-button {
-    background-color: $background-color_1;
-    border: 2px solid #fff;
-    border-radius: 2px;
-    color: $color_1;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 25px;
-    padding: 15px 20px;
-    text-transform: uppercase;
-  }
-}
-.margin-t-200 {
-  margin-top: 200px;
-}
-.page-bandarfull .reveal-type {
-  font-size: 24px;
-  width: 685px;
-  .p-style-2 {
-    margin-bottom: 3rem;
-  }
-  h3 {
-    font-size: 24px;
-    letter-spacing: 2px;
-    line-height: 40px;
-  }
-  .display-5 {
-    line-height: 16px !important;
-    .word {
-      vertical-align: super;
-    }
-  }
-  .heading-style-2 {
-    line-height: 1.5 !important;
-  }
-}
-.sistehood-emblem {
-  width: 200px;
-}
-#fireflySection {
-  .location {
-    max-width: 700px;
-    font-size: 36px;
-    text-align: left;
-    margin: 0 auto;
-    color: var(--c1);
-  }
-  svg {
-    fill: #fff !important;
-  }
-}
-.circle-bottle img {
-  margin: 100px auto;
-  animation: rotation 10s infinite linear;
-}
-// @media (min-width : 1500px) {
-//   .card-detail {
-//     width: 22vw;
-//     flex-grow: 1;
-//   }
-//   .flip-box .flip-box-front , .flip-box .flip-box-back {
-//     background-size: contain;
-//     height: 80vh;
-//   }
-//   .flip-box .flip-box-front .inner  {
-//     width: 4vw;
-//   }
-//   .page-bandarfull .scroll-image {
-//     width: 100%;
-//   }
-// }
 
-@media (max-width: 768px) {
-  .page-bandarfull .animation-section {
-    height: 3000px;
-    #container3D canvas {
-      opacity: 0;
-      transition: all 1s;
-      left: 0%;
-      width: 50vw;
-      position: fixed;
+  .flip-box-front::before {
+    content: "More";
+    position: absolute;
+    bottom: 3%;
+    right: 15%;
+    color: #ffffff;
+    font-size: 14px;
+  }
 
-      &.go-left {
-        display: none;
-      }
-    }
+  .flip-box-front::after {
+    content: url(../img/animate/flip-icon-07.svg);
+    position: absolute;
+    bottom: 2%;
+    right: 12%;
+    color: #fff;
+    font-size: 14px;
+    width: 55px;
   }
-  .sticky-dots-animation {
-    padding: 0 12px;
-  }
-  .page-bandarfull .scroll-image {
-    width: 1000vw;
-    gap: 20px;
-    .card-detail {
-      max-width: 90vw;
-      width: 100%;
-    }
-    .flip-box-back,
-    .flip-box-front {
-      height: 580px;
 
-      .front-card {
-        width: 100%;
-      }
-    }
-  }
-  #kumaonMain .reveal-type {
-    font-size: 24px;
+  .last-tagline {
+    max-width: 768px;
     width: 100%;
   }
-  .dark-circle img {
-    min-height: 100% !important;
+}
+
+.optimize-media-query {
+  // Adjust styles for small screens
+  @media (max-width: 768px) {
+    .page-bandarfull .animation-section {
+      height: 3000px;
+
+      #container3D canvas {
+        opacity: 0;
+        transition: all 1s;
+        left: 0%;
+        width: 50vw;
+        position: fixed;
+
+        &.go-left {
+          display: none;
+        }
+      }
+    }
+
+    .sticky-dots-animation {
+      padding: 0 12px;
+    }
+
+    .page-bandarfull .scroll-image {
+      width: 1000vw;
+
+      .card-detail {
+        max-width: 90vw;
+        width: 100%;
+      }
+
+      .flip-box-back,
+      .flip-box-front {
+        height: 580px;
+
+        .front-card {
+          width: 100%;
+        }
+      }
+    }
+
+    .reveal-type {
+      font-size: 24px;
+      width: 100%;
+    }
+
+    .dark-circle img {
+      min-height: 100% !important;
+    }
   }
+}
+
+.sticky-dots-left,
+.sticky-dots-right {
+  position: absolute;
+  width: 15%;
+  transform: translate(0px, 0px);
 }
 
 .sticky-dots-left {
-  position: absolute;
   top: -200px;
-  width: 15%;
   left: 0;
-  transform: translate(0px, 0px);
 }
+
 .sticky-dots-right {
-  position: absolute;
   bottom: -200px;
-  width: 15%;
   right: 0;
-  transform: rotate(90deg);
   transform: translate(0px, 0px);
 }
